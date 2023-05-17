@@ -146,7 +146,6 @@
     }
   ],
   "awards": [],
-
   "publications": [
     {
       "name": "A CMS Case Study: Faculty and Student Factors in a School Disaster Occurrence",
@@ -255,6 +254,12 @@
         "Board",
         "Video",
         "Card"
+      ]
+    },
+    {
+      "name": "Public Speaking",
+      "keywords": [
+        "Toastmasters"
       ]
     }
   ],
