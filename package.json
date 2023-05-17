@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "validate-json": "resumed validate ./resume.json",
+    "test": "run-s validate-json",
+    "build-html": "resumed render ./resume.json -o docs/index.html --theme jsonresume-theme-stackoverflow-detailed",
+    "build": "run-p build-html"
+  },
+  "dependencies": {
+    "jsonresume-theme-stackoverflow-detailed": "^0.3.1",
+    "npm-run-all": "^4.1.5",
+    "resumed": "^3.0.1"
+  }
+}
