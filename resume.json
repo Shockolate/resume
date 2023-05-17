@@ -213,6 +213,14 @@
         "PCL",
         "AprilTag"
       ]
+    },
+    {
+      "name": "Public Speaking",
+      "level": "Intermediate",
+      "keywords": [
+        "Toastmasters",
+        "Improv Comedy"
+      ]
     }
   ],
   "interests": [
@@ -254,12 +262,6 @@
         "Board",
         "Video",
         "Card"
-      ]
-    },
-    {
-      "name": "Public Speaking",
-      "keywords": [
-        "Toastmasters"
       ]
     }
   ],
