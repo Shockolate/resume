@@ -3,7 +3,7 @@
   "basics": {
     "name": "Ted Armstrong",
     "label": "Software Engineer ♥ Robotics",
-    "image": "./headshot.png",
+    "image": "./assets/headshot.png",
     "email": "theodorecarmstrong@gmail.com",
     "phone": "+1 (207) 701-9855",
     "summary": "(He/Him/His) | Software Engineer with a love of Robotics excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer.",
