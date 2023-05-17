@@ -3,7 +3,9 @@
     "validate-json": "resumed validate ./resume.json",
     "test": "run-s validate-json",
     "build-html": "resumed render ./resume.json -o docs/index.html --theme jsonresume-theme-stackoverflow-detailed",
-    "build": "run-p build-html"
+    "build": "run-p build-html",
+    "view": "open docs/index.html",
+    "build-and-view": "run-s test build view"
   },
   "dependencies": {
     "jsonresume-theme-stackoverflow-detailed": "^0.3.1",
