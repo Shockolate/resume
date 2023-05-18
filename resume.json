@@ -6,7 +6,7 @@
     "image": "assets/headshot.png",
     "email": "theodorecarmstrong@gmail.com",
     "phone": "+1 (207) 701-9855",
-    "summary": "(He/Him/His) | Software Engineer with a love of Robotics excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer.",
+    "summary": "Software Engineer with a love of Robotics excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer. He/Him/His",
     "location": {
       "countryCode": "US",
       "city": "Portland",
@@ -37,14 +37,14 @@
       "startDate": "2018-05-07",
       "endDate": "2023-05-04",
       "highlights": [
-        "Technical leader of a squad of up to 7 software engineers, 2 product managers, 3 QA engineers, and 1 UX Designer",
-        "Developed user facing workflows (with Behavior Trees) deployed to thousands of Autonomous Mobile Robots (AMRs), stations, and handheld devices in a Warehouse Fulfillment setting",
-        "Designed and migrated dozens of normalized data models, with read-performant views and indexes, in PostgreSQL hosted by Google Cloud SQL",
+        "Technical lead of a squad of up to 7 software engineers, 2 product managers, 3 QA engineers, and 1 UX Designer",
+        "Implemented user facing workflows using Behavior Trees which deployed to thousands of Autonomous Mobile Robots (AMRs), stations, and handheld devices in a Warehouse Fulfillment setting",
+        "Designed and migrated dozens of normalized data models, with read-performant views and indexes, in PostgreSQL hosted by GCP's Cloud SQL",
         "Advocated for API-First approach for development between internal and external customers, using OpenAPI Specification (OAS) where derived JSON Schemas and Typescript Types are utilized for validation and development",
-        "Engineered Kubernetes hosted services utilizing Event-Driven architecture (CQRS-ES)",
-        "Established design review process for time-intensive technical projects across the organization",
+        "Engineered Kubernetes hosted services utilizing an Event-Driven architecture (CQRS-ES)",
+        "Established a design review process for time-intensive technical projects across the organization",
         "Volunteered for regular on-call shifts (168 continuous hours) to represent Engineering supporting up to 109 active sites",
-        "Guided peers with their technical and career progression",
+        "Mentored peers with their technical and career progression",
         "Championed team camaraderie with process improvements, hosted game sessions, and cracked dadjokes"
       ],
       "keywords": [
@@ -60,7 +60,7 @@
         "Loopback4",
         "RESTful APIs"
       ],
-      "summary": "Warehouse Fulfillment Automation startup with novel AMR solution. Acquired by Shopify on 2019-10-17.",
+      "summary": "Warehouse Fulfillment Automation startup with novel AMR solution. Acquired by Shopify October 2019.",
       "url": "https://6river.com/",
       "location": "Waltham, Massachusetts & Remote"
     },
@@ -140,8 +140,7 @@
       "studyType": "B.S.",
       "startDate": "2011-08",
       "endDate": "2015-05",
-      "score": "3.50 / 4.00 GPA, with High Distinction",
-      "gpa": "3.50 / 4.00",
+      "score": "3.50 / 4.00 GPA",
       "summary": "Graduated with High Distinction"
     }
   ],
@@ -290,6 +289,7 @@
         "ROS"
       ],
       "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2659/2561",
+      "summary": "Undergraduate senior project competing in the Amazon Picking Challenge",
       "endDate": "2015-05-27"
     },
     {
@@ -303,6 +303,7 @@
       ],
       "url": "http://robot.wpi.edu/drc/",
       "endDate": "2014-10-31",
+      "summary": "Undergraduate extracurricular project participating in the DARPA Robotics Challenge",
       "keywords": [
         "ROS",
         "PCL",
@@ -324,6 +325,7 @@
         "Jenkins"
       ],
       "description": "Led a team of 15 colleagues to design and implement a project management Java application while utilizing Git version control. Built application using Ant, deployed to Jenkins server, tested with JUnit, and accurately documented with JavaDoc notation. Distributed mock payment to colleagues, scheduled work meetings, delegated tasks, and resolved interpersonal conflicts. Designed and implemented Java software.",
+      "summary": "Undergraduate course simulating a Software Engineering environment",
       "endDate": "2014-05-31",
       "roles": []
     }

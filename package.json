@@ -2,14 +2,15 @@
   "scripts": {
     "validate-json": "resumed validate ./resume.json",
     "test": "run-s validate-json",
-    "build-html": "resumed render ./resume.json -o docs/index.html --theme jsonresume-theme-stackoverflow-detailed",
+    "build-html": "resumed render ./resume.json -o docs/index.html --theme @shockolate/jsonresume-theme-anthonyjdella-stackoverflow",
     "build": "run-p build-html",
     "view": "open docs/index.html",
     "build-and-view": "run-s test build view"
   },
   "dependencies": {
-    "jsonresume-theme-stackoverflow-detailed": "^0.3.1",
+    "@shockolate/jsonresume-theme-anthonyjdella-stackoverflow": "^1.0.13",
     "npm-run-all": "^4.1.5",
-    "resumed": "^3.0.1"
+    "resumed": "^3.0.1",
+    "resume-cli": "^3.0.8"
   }
 }
