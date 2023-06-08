@@ -2,11 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Ted Armstrong",
-    "label": "Software Engineer ♥ Robotics",
+    "label": "Software Engineer ❤️ 🤖",
     "image": "assets/headshot.png",
     "email": "theodorecarmstrong@gmail.com",
     "phone": "+1 (207) 701-9855",
-    "summary": "Software Engineer with a love of Robotics excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer. He/Him/His",
+    "summary": "Charismatic Software Engineer excited to solve interesting problems with interesting people. I have grokked a scrappy yet thoughtful approach to delivering value for the customer. With a career in software engineering that has been characterized by a unique blend of passion for robotics and a flair for the unconventional, this fusion of interests has led to a professional profile that is both technically proficient and remarkably innovative. Whether cracking jokes to boost team morale or leveraging technical acumen to drive valuable software development, the spirit of an engineer who thrives on blending the serious with the whimsical shines through. Part-time board game night host, headbanger, and craft beer nerd. He/Him/His",
     "location": {
       "countryCode": "US",
       "city": "Portland",
@@ -43,7 +43,7 @@
         "Advocated for API-First approach for development between internal and external customers, using OpenAPI Specification (OAS) where derived JSON Schemas and Typescript Types are utilized for validation and development",
         "Engineered Kubernetes hosted services utilizing an Event-Driven architecture (CQRS-ES)",
         "Established a design review process for time-intensive technical projects across the organization",
-        "Volunteered for regular on-call shifts (168 continuous hours) to represent Engineering supporting up to 109 active sites",
+        "Volunteered for regular on-call shifts (168 continuous hours) providing crucial engineering support for up to 109 active sites",
         "Mentored peers with their technical and career progression",
         "Championed team camaraderie with process improvements, hosted game sessions, and cracked dadjokes"
       ],
@@ -95,8 +95,7 @@
       "startDate": "2014-06-09",
       "endDate": "2014-08-22",
       "highlights": [
-        "Designed and programmed embedded control application enhancements using C++ for Locomotive Control Software Architecture",
-        "Grokked entire Software Development Life Cycle process"
+        "Acquired practical experience in C++ Embedded Software development and processes"
       ],
       "keywords": [
         "C++",
@@ -113,9 +112,7 @@
       "startDate": "2011-01-31",
       "endDate": "2011-02-28",
       "highlights": [
-        "Designed and developed software for a virtual boat tracking application",
-        "Performed maintenance coding on existing systems",
-        "Presented software changes to reviewers"
+        "Early exposure to C++ software development"
       ],
       "keywords": [
         "C++"
