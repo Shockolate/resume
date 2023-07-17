@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Ted Armstrong",
-    "label": "Software Engineer, Passionate Problem Solver, Incessant Learner",
+    "label": "Senior Software Engineer, Passionate Problem Solver, Incessant Learner",
     "image": "assets/headshot.png",
     "email": "theodorecarmstrong@gmail.com",
     "phone": "+1 (207) 701-9855",
