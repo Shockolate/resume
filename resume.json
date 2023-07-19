@@ -2,13 +2,13 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Ted Armstrong",
-    "label": "Senior Software Engineer, Passionate Problem Solver, Incessant Learner",
+    "label": "Senior Software Engineer, Passionate Problem Solver, Constant Learner",
     "image": "assets/headshot.png",
     "email": "theodorecarmstrong@gmail.com",
     "phone": "+1 (207) 701-9855",
     "summary": "Software Engineer excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer. Part-time board game night host, dad-joker, headbanger, and craft beer nerd. He/Him/His",
     "location": {
-      "countryCode": "US",
+      "countryCode": "USA",
       "city": "Portland",
       "region": "Maine"
     },
@@ -37,11 +37,11 @@
       "startDate": "2018-05-07",
       "endDate": "2023-05-04",
       "highlights": [
-        "Technical lead of a squad of up to 7 software engineers, 2 product managers, 3 QA engineers, and 1 UX Designer",
+        "Engineered RESTful services written in Typescript on NodeJS hosted by Kubernetes utilizing an Event-Driven architecture (CQRS-ES)",
+        "Technical lead of a squad of up to 7 software engineers, 2 product managers, 3 QA engineers, and 1 UX Designer for features in Typescript",
         "Implemented user facing workflows using Behavior Trees which deployed to thousands of Autonomous Mobile Robots (AMRs), stations, and handheld devices in a Warehouse Fulfillment setting",
         "Designed and migrated dozens of normalized data models, with read-performant views and indexes, in PostgreSQL hosted by GCP's Cloud SQL",
         "Advocated for API-First approach for development between internal and external customers, using OpenAPI Specification (OAS) where derived JSON Schemas and Typescript Types are utilized for validation and development",
-        "Engineered Kubernetes hosted services utilizing an Event-Driven architecture (CQRS-ES)",
         "Established a design review process for time-intensive technical projects across the organization",
         "Volunteered for regular on-call shifts (168 continuous hours) providing crucial engineering support for up to 109 active sites",
         "Mentored peers with their technical and career progression",
@@ -50,15 +50,14 @@
       "keywords": [
         "Typescript",
         "NodeJS",
-        "Robot Behavior",
         "OAS",
-        "GCP",
         "PostgreSQL",
+        "Event Driven Architecture",
+        "RESTful APIs",
+        "Robot Behavior",
+        "GCP",
         "Warehouse Fulfillment",
-        "AMR",
-        "Pub/Sub",
-        "Loopback4",
-        "RESTful APIs"
+        "Loopback4"
       ],
       "summary": "Warehouse Fulfillment Automation startup with novel AMR solution. Acquired by Shopify October 2019.",
       "url": "https://6river.com/",
@@ -70,10 +69,10 @@
       "startDate": "2015-07-06",
       "endDate": "2018-04-27",
       "highlights": [
+        "Developed microservices in C# (.NET Framework & .NET Core) and Javascript (NodeJS)",
         "Driver of the adoption of Serverless architecture (on AWS) to the Manufacturing Software organization",
         "Built dozens of RESTful APIs in our Microservice stack",
         "Designed and implemented CI/CD solution for Serverless architecture",
-        "Developed microservices in C# (.NET Framework & .NET Core) and Javascript (NodeJS)",
         "Wrote developer and build tools with Ruby (Rake & RubyGems)"
       ],
       "keywords": [
@@ -161,6 +160,7 @@
         "GitHub",
         "Linting",
         "Code Review",
+        "Unit Testing",
         "Pair Programming",
         "CI/CD",
         "Mentorship"
@@ -170,22 +170,23 @@
       "name": "Backend Software Development",
       "level": "Expert",
       "keywords": [
-        "RESTful Services",
-        "OpenAPI Specification",
-        "PostgreSQL",
         "NodeJS",
         "Typescript",
+        "PostgreSQL",
+        "RESTful Services",
+        "OpenAPI Specification",
         "Event-Driven Architecture",
         "GCP",
         "AWS"
       ]
     },
     {
-      "name": "Robot Behavior & Autonomy",
+      "name": "Frontend Software Development",
       "level": "Intermediate",
       "keywords": [
-        "Behavior Tree",
-        "AMR"
+        "React",
+        "HTML",
+        "CSS"
       ]
     },
     {
@@ -208,14 +209,6 @@
         "OpenCV",
         "PCL",
         "AprilTag"
-      ]
-    },
-    {
-      "name": "Public Speaking",
-      "level": "Intermediate",
-      "keywords": [
-        "Toastmasters",
-        "Improv Comedy"
       ]
     }
   ],
