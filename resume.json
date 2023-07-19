@@ -69,9 +69,8 @@
       "startDate": "2015-07-06",
       "endDate": "2018-04-27",
       "highlights": [
-        "Developed microservices in C# (.NET Framework & .NET Core) and Javascript (NodeJS)",
+        "Developed RESTful microservices in C# (.NET Framework & .NET Core) and Javascript (NodeJS)",
         "Driver of the adoption of Serverless architecture (on AWS) to the Manufacturing Software organization",
-        "Built dozens of RESTful APIs in our Microservice stack",
         "Designed and implemented CI/CD solution for Serverless architecture",
         "Wrote developer and build tools with Ruby (Rake & RubyGems)"
       ],
