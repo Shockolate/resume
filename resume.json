@@ -181,33 +181,11 @@
     },
     {
       "name": "Frontend Software Development",
-      "level": "Intermediate",
+      "level": "Basic",
       "keywords": [
         "React",
         "HTML",
         "CSS"
-      ]
-    },
-    {
-      "name": "Warehousing Fulfillment",
-      "level": "Intermediate",
-      "keywords": [
-        "WMS",
-        "Inventory Systems",
-        "Inbound",
-        "Returns",
-        "Picking",
-        "Person to Goods"
-      ]
-    },
-    {
-      "name": "Robotics Software Development",
-      "level": "Basic",
-      "keywords": [
-        "ROS",
-        "OpenCV",
-        "PCL",
-        "AprilTag"
       ]
     }
   ],
@@ -229,27 +207,26 @@
       ]
     },
     {
-      "name": "Beer",
+      "name": "Beverages",
       "keywords": [
-        "Craft",
-        "Homebrewing",
-        "Bottle sharing"
+        "Homebrewer",
+        "Amateur mixologist"
       ]
     },
     {
       "name": "Skiing",
       "keywords": [
         "Alpine",
-        "Lead Instructor of my Partner",
         "Aprés Enthusiast"
       ]
     },
     {
       "name": "Games",
       "keywords": [
-        "Board",
-        "Video",
-        "Card"
+        "Board games",
+        "Video games",
+        "Cribbage",
+        "Board Game Convention planner"
       ]
     }
   ],
@@ -261,6 +238,10 @@
     {
       "name": "Tony Gaetani, managed Ted directly",
       "reference": "I worked with Ted at 6 River Systems for over 5 years and I was his manager for part of that time. I witnessed Ted grow significantly as an engineer, team member, and subject matter expert. Ted delivered high-quality, maintainable, and testable code, demonstrating his expertise and attention to detail. Ted actively fostered a sense of camaraderie, especially in a remote work environment, by organizing engaging team-building activities and checking in on his team members. Ted's thoughtfulness, technical proficiency, and team-oriented nature make him a great candidate for any software organization."
+    },
+    {
+      "name": "Usman Chaudhary, worked on the same team as Ted",
+      "reference": "Ted and I were on same team at Shopify / 6 River Systems, which gave me the opportunity to work closely with him. He is excellent engineer, one of the best I've worked with in my multiple decades in software engineering. He's also a great teacher, and was crucial in helping me learn the software stack when I joined the company. I can't thank him enough for the hours he spent with me, patiently explaining the subtleties of the complex systems we were responsible for. Finally, In addition to his skills as an engineer and a mentor, Ted took the lead in organizing team activities and games, something I appreciated greatly in a remote team."
     }
   ],
   "projects": [
