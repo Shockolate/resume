@@ -40,14 +40,15 @@
         "Designed State Machines in AWS Step Functions & Lambdas with Serverless",
         "Volunteered for On Call role triaging production issues",
         "Developed user features in an agile environment",
-        "Hosted game sessions to promote team camaraderie in a remote and cross-timezone culture"
+        "Hosted game sessions to promote team camaraderie in a Remote & Cross-Timezone culture"
       ],
       "keywords": [
         "Typescript",
         "NodeJS",
         "NestJS",
         "AWS",
-        "Serverless"
+        "Serverless",
+        "PostgreSQL"
       ],
       "summary": "The World's First, and Only, Fully-Personalized 3D Printed Orthodontics Bracket System",
       "url": "https://lf.co/",
