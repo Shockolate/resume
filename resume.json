@@ -6,7 +6,7 @@
     "image": "assets/headshot.png",
     "email": "theodorecarmstrong@gmail.com",
     "phone": "+1 (207) 701-9855",
-    "summary": "Software Engineer excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer. Part-time board game night host, headbanger, and craft beer nerd. He/Him",
+    "summary": "Software Engineer excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer. Agile development champion with a process and structure mindset. He/Him",
     "location": {
       "countryCode": "USA",
       "city": "Portland",
@@ -22,11 +22,6 @@
         "network": "GitHub",
         "username": "Shockolate",
         "url": "https://github.com/Shockolate"
-      },
-      {
-        "network": "YouTube",
-        "username": "Magic Cart",
-        "url": "https://www.youtube.com/watch?v=b5MQgVXKmEI"
       }
     ]
   },
@@ -40,9 +35,7 @@
         "Migrated legacy express.js RESTful service to the NestJS framework in NodeJS with Typescript, enabling best coding practices and patterns",
         "Designed schemas and wrote performant queries for a PostgreSQL database",
         "Utilized Serverless and Terraform Infrastructure As Code frameworks for deploying software solutions",
-        "Volunteered for On Call role triaging production issues",
-        "Thrived in an Agile development culture",
-        "Hosted bonding and game sessions to promote team camaraderie in a Remote & Cross-Timezone culture"
+        "Participated in the On Call rotation, triaging production issues"
       ],
       "keywords": [
         "Typescript",
