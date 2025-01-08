@@ -581,7 +581,6 @@ blockquote {
   width: 10em;
 }
 
-
 #references .item {
   padding-left: 0.5em;
   border-left: 5px solid #ff6d1f;
@@ -711,10 +710,10 @@ blockquote {
     width: 8em;
   }
   #contact {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   #profiles {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   .section header .date {
     float: right;
@@ -725,16 +724,16 @@ blockquote {
   .writing-item {
     margin: 0 0 0 0 !important;
   }
-  .section:nth-child(n+8) {
+  .section:nth-child(n + 8) {
     display: none;
   }
-  #speaking .speaking-item:nth-child(n+4){
+  #speaking .speaking-item:nth-child(n + 4) {
     display: none;
   }
-  #projects .project-item:nth-child(n+4){
+  #projects .project-item:nth-child(n + 4) {
     display: none;
   }
-  #writing .writing-item:nth-child(n+4){
+  #writing .writing-item:nth-child(n + 4) {
     display: none;
   }
   #resume {
@@ -816,13 +815,13 @@ blockquote {
     font-size: 0.95em;
   }
   #skills .name {
-    font-size: 0.95em
+    font-size: 0.95em;
   }
   #skills .level {
-    font-size: 0.8em
+    font-size: 0.8em;
   }
   #interests .name {
-    font-size: 0.95em
+    font-size: 0.95em;
   }
   #skills .keywords::before {
     content: none;
@@ -854,6 +853,9 @@ blockquote {
   }
   .fa-map-marker-alt:before {
     padding-left: 0.1em;
+  }
+  #references-section {
+    display: none;
   }
 }
 
@@ -917,7 +919,7 @@ blockquote {
     
     	<section class="section">
     		<section class="main-summary">
-    			<div><p>Software Engineer excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer. Part-time board game night host, dad-joker, headbanger, and craft beer nerd. He/Him/His</p></div>
+    			<div><p>Software Engineer excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer. Part-time board game night host, headbanger, and craft beer nerd. He/Him</p></div>
     		</section>
     	</section>
     
@@ -1021,14 +1023,19 @@ blockquote {
           	<li id="working-item">AWS</li>
           	<li id="working-item">Serverless</li>
           	<li id="working-item">PostgreSQL</li>
+          	<li id="working-item">MES</li>
+          	<li id="working-item">Infrastructure As Code</li>
+          	<li id="working-item">Serverless</li>
         	</ul>
         	<div class="item" id="work-item">
             <div class="summary"><p>The World's First, and Only, Fully-Personalized 3D Printed Orthodontics Bracket System</p></div>
             <ul class="highlights">
-                <li><p>Migrated legacy express.js RESTful service to the NestJS framework in NodeJS with Typescript</p></li>
-                <li><p>Designed State Machines in AWS Step Functions & Lambdas with Serverless</p></li>
+                <li><p>Developed features and workflows for manufacturing technicians for our Manufacturing Execution System (MES) in our Wilmington Factory</p></li>
+                <li><p>Migrated legacy express.js RESTful service to the NestJS framework in NodeJS with Typescript, enabling best coding practices and patterns</p></li>
+                <li><p>Designed schemas and wrote performant queries for a PostgreSQL database</p></li>
+                <li><p>Utilized Serverless and Terraform Infrastructure As Code frameworks for deploying software solutions</p></li>
                 <li><p>Volunteered for On Call role triaging production issues</p></li>
-                <li><p>Developed features for our Manufacturing Execution System in an agile development environment</p></li>
+                <li><p>Thrived in an Agile development culture</p></li>
                 <li><p>Hosted bonding and game sessions to promote team camaraderie in a Remote & Cross-Timezone culture</p></li>
             </ul>
         	</div>
@@ -1161,55 +1168,38 @@ blockquote {
     			<h3 class="name">
     				General Software Development
     			</h3>
-    			 
-    			<div class="level expert">
-    				<em>Expert</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
+    			 			<ul class="keywords">
     				<li>Git</li>
-    				<li>GitHub</li>
     				<li>Linting</li>
     				<li>Code Review</li>
     				<li>Unit Testing</li>
     				<li>Pair Programming</li>
     				<li>CI/CD</li>
-    				<li>Mentorship</li>
     			</ul>
     		</div>
     		<div class="item">
     			<h3 class="name">
     				Backend Software Development
     			</h3>
-    			 
-    			<div class="level expert">
-    				<em>Expert</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
+    			 			<ul class="keywords">
     				<li>NodeJS</li>
-    				<li>Typescript</li>
     				<li>PostgreSQL</li>
     				<li>RESTful Services</li>
     				<li>OpenAPI Specification</li>
-    				<li>Event-Driven Architecture</li>
+    				<li>Infrastructure As Code</li>
     				<li>GCP</li>
     				<li>AWS</li>
     			</ul>
     		</div>
     		<div class="item">
     			<h3 class="name">
-    				Frontend Software Development
+    				Languages
     			</h3>
-    			 
-    			<div class="level basic">
-    				<em>Basic</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>React</li>
-    				<li>HTML</li>
-    				<li>CSS</li>
+    			 			<ul class="keywords">
+    				<li>Typescript</li>
+    				<li>Javascript</li>
+    				<li>SQL</li>
+    				<li>C#</li>
     			</ul>
     		</div>
     	</section>
@@ -1234,8 +1224,7 @@ blockquote {
             Comedy
           </h3>
           <ul class="keywords">
-            <li>Stand up</li>
-            <li>Improv</li>
+            <li>Improvisational Comedy</li>
             <li>Puns &amp; Dad Jokes</li>
           </ul>
         </div>
@@ -1264,46 +1253,45 @@ blockquote {
           <ul class="keywords">
             <li>Board games</li>
             <li>Video games</li>
-            <li>Cribbage</li>
             <li>Board Game Convention planner</li>
           </ul>
         </div>
       </section>
     </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>References</h2>
-      </header>
-      <section id="references">
-        <div class="item">
-          <blockquote class="reference">
-            &#8220;&#32;Ted is an exceptional engineer. He has deep technical knowledge, a strong sense of ownership and a dedication to constant growth. I managed Ted at 6 River Systems and relied on his experience to help lead the team. He set the technical standard for the team with his combination of high quality code and domain expertise. He assisted other members of the squad through pair programming, code reviews and knowledge sharing sessions. Ted&#x27;s impact spread far beyond the team. He took over the running of design review sessions, leading to greater participation from all the teams involved and reclaiming time lost to inefficient processes. He was also a member of on-call rotations that provided indispensable service and required extensive knowledge of the company&#x27;s systems. Ted went out of his way to build connections in a remote work environment, advocating for best practices around communication and often running squad bonding activities. All of this was driven by his commitment to personal and professional growth. Ted will be an invaluable member of any engineering organization he joins.&#32;&#8221;
-          </blockquote>
-          <div class="name">
-            Johnny Anguish, managed Ted directly
-          </div>
-        </div>
-        <div class="item">
-          <blockquote class="reference">
-            &#8220;&#32;I worked with Ted at 6 River Systems for over 5 years and I was his manager for part of that time. I witnessed Ted grow significantly as an engineer, team member, and subject matter expert. Ted delivered high-quality, maintainable, and testable code, demonstrating his expertise and attention to detail. Ted actively fostered a sense of camaraderie, especially in a remote work environment, by organizing engaging team-building activities and checking in on his team members. Ted&#x27;s thoughtfulness, technical proficiency, and team-oriented nature make him a great candidate for any software organization.&#32;&#8221;
-          </blockquote>
-          <div class="name">
-            Tony Gaetani, managed Ted directly
-          </div>
-        </div>
-        <div class="item">
-          <blockquote class="reference">
-            &#8220;&#32;Ted and I were on same team at Shopify / 6 River Systems, which gave me the opportunity to work closely with him. He is excellent engineer, one of the best I&#x27;ve worked with in my multiple decades in software engineering. He&#x27;s also a great teacher, and was crucial in helping me learn the software stack when I joined the company. I can&#x27;t thank him enough for the hours he spent with me, patiently explaining the subtleties of the complex systems we were responsible for. Finally, In addition to his skills as an engineer and a mentor, Ted took the lead in organizing team activities and games, something I appreciated greatly in a remote team.&#32;&#8221;
-          </blockquote>
-          <div class="name">
-            Usman Chaudhary, worked on the same team as Ted
-          </div>
-        </div>
+      <section class="section" id="references-section">
+        <header>
+          <h2 class="section-title">References</h2>
+        </header>
+        <section id="references">
+            <div class="item">
+                <blockquote class="reference">
+                  &#8220;&#32;Ted is an exceptional engineer. He has deep technical knowledge, a strong sense of ownership and a dedication to constant growth. I managed Ted at 6 River Systems and relied on his experience to help lead the team. He set the technical standard for the team with his combination of high quality code and domain expertise. He assisted other members of the squad through pair programming, code reviews and knowledge sharing sessions. Ted&#x27;s impact spread far beyond the team. He took over the running of design review sessions, leading to greater participation from all the teams involved and reclaiming time lost to inefficient processes. He was also a member of on-call rotations that provided indispensable service and required extensive knowledge of the company&#x27;s systems. Ted went out of his way to build connections in a remote work environment, advocating for best practices around communication and often running squad bonding activities. All of this was driven by his commitment to personal and professional growth. Ted will be an invaluable member of any engineering organization he joins.&#32;&#8221;
+                </blockquote>
+                <div class="name">
+                  Johnny Anguish, managed Ted directly
+                </div>
+            </div>
+            <div class="item">
+                <blockquote class="reference">
+                  &#8220;&#32;I worked with Ted at 6 River Systems for over 5 years and I was his manager for part of that time. I witnessed Ted grow significantly as an engineer, team member, and subject matter expert. Ted delivered high-quality, maintainable, and testable code, demonstrating his expertise and attention to detail. Ted actively fostered a sense of camaraderie, especially in a remote work environment, by organizing engaging team-building activities and checking in on his team members. Ted&#x27;s thoughtfulness, technical proficiency, and team-oriented nature make him a great candidate for any software organization.&#32;&#8221;
+                </blockquote>
+                <div class="name">
+                  Tony Gaetani, managed Ted directly
+                </div>
+            </div>
+            <div class="item">
+                <blockquote class="reference">
+                  &#8220;&#32;Ted and I were on same team at Shopify / 6 River Systems, which gave me the opportunity to work closely with him. He is excellent engineer, one of the best I&#x27;ve worked with in my multiple decades in software engineering. He&#x27;s also a great teacher, and was crucial in helping me learn the software stack when I joined the company. I can&#x27;t thank him enough for the hours he spent with me, patiently explaining the subtleties of the complex systems we were responsible for. Finally, In addition to his skills as an engineer and a mentor, Ted took the lead in organizing team activities and games, something I appreciated greatly in a remote team.&#32;&#8221;
+                </blockquote>
+                <div class="name">
+                  Usman Chaudhary, worked on the same team as Ted
+                </div>
+            </div>
+        </section>
       </section>
-    </section>
     <section class="section">
       <header>
-        <h2 class='section-title'>Projects <span class="item-count">(3)</span></h2>
+        <h2 class='section-title'>Projects <span class="item-count">(2)</span></h2>
       </header>
       <section id="projects">
         <section class="project-item">
@@ -1359,31 +1347,6 @@ blockquote {
                 <li><p>Collaborated on a team of 30 of WPI Undergraduate, Graduate students, professors, and several Carnegie Melon University professors to participate in the DARPA Robotics Challenge. Our mission was to add functionality to the Atlas Robot (from Boston Dynamics) to complete a variety tasks in context of a disaster scenario</p></li>
                 <li><p>Worked in the vision sub-team, implementing fiducial recognition software</p></li>
                 <li><p>Incorporated Stereo Cameras and LiDAR for area mapping using PCL, OpenCV and ROS</p></li>
-            </ul>
-          </div>
-        </section>
-        <section class="project-item">
-            <input id="project-item-2" type="checkbox" class="toggle-item" />
-            <label for="project-item-2"></label>
-    
-          <header class="clear">
-            <div class="position">Software Engineering Course: WPI-Suite</div>
-            <div class="date">
-              <span class="startDate">Mar 2014</span>
-              <span class="endDate">- May 2014</span>
-            </div>
-          </header>
-          <ul class="keywords">
-              <li>Java</li>
-              <li>Ant</li>
-              <li>Jenkins</li>
-          </ul>
-          <div class="item">
-              <div class="summary"><p>Undergraduate course simulating a Software Engineering environment</p></div>
-            <ul class="highlights">
-                <li><p>Led a team of 15 colleagues to design and implement a project management Java application in a simulated professional Software Engineering environment</p></li>
-                <li><p>Built application using Ant, deployed to Jenkins server, tested with JUnit, and documented with JavaDoc</p></li>
-                <li><p>Distributed mock payment to colleagues, scheduled work meetings, delegated tasks, and resolved interpersonal conflicts</p></li>
             </ul>
           </div>
         </section>

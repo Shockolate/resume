@@ -6,7 +6,7 @@
     "image": "assets/headshot.png",
     "email": "theodorecarmstrong@gmail.com",
     "phone": "+1 (207) 701-9855",
-    "summary": "Software Engineer excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer. Part-time board game night host, dad-joker, headbanger, and craft beer nerd. He/Him/His",
+    "summary": "Software Engineer excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer. Part-time board game night host, headbanger, and craft beer nerd. He/Him",
     "location": {
       "countryCode": "USA",
       "city": "Portland",
@@ -36,10 +36,12 @@
       "position": "Senior Software Engineer",
       "startDate": "2023-08-28",
       "highlights": [
-        "Migrated legacy express.js RESTful service to the NestJS framework in NodeJS with Typescript",
-        "Developed features for our Manufacturing Execution System in an agile development environment",
-        "Designed State Machines in AWS Step Functions & Lambdas with Serverless",
+        "Developed features and workflows for manufacturing technicians for our Manufacturing Execution System (MES) in our Wilmington Factory",
+        "Migrated legacy express.js RESTful service to the NestJS framework in NodeJS with Typescript, enabling best coding practices and patterns",
+        "Designed schemas and wrote performant queries for a PostgreSQL database",
+        "Utilized Serverless and Terraform Infrastructure As Code frameworks for deploying software solutions",
         "Volunteered for On Call role triaging production issues",
+        "Thrived in an Agile development culture",
         "Hosted bonding and game sessions to promote team camaraderie in a Remote & Cross-Timezone culture"
       ],
       "keywords": [
@@ -48,7 +50,10 @@
         "NestJS",
         "AWS",
         "Serverless",
-        "PostgreSQL"
+        "PostgreSQL",
+        "MES",
+        "Infrastructure As Code",
+        "Serverless"
       ],
       "summary": "The World's First, and Only, Fully-Personalized 3D Printed Orthodontics Bracket System",
       "url": "https://lf.co/",
@@ -118,10 +123,7 @@
       "highlights": [
         "Acquired practical experience in C++ Embedded Software development and processes"
       ],
-      "keywords": [
-        "C++",
-        "Embedded Software"
-      ],
+      "keywords": ["C++", "Embedded Software"],
       "summary": "American railroad rolling stock manufacturer.",
       "url": "https://www.ge.com/research/sectors/transportation",
       "location": "Erie, Pennsylvania",
@@ -161,79 +163,54 @@
   "skills": [
     {
       "name": "General Software Development",
-      "level": "Expert",
       "keywords": [
         "Git",
-        "GitHub",
         "Linting",
         "Code Review",
         "Unit Testing",
         "Pair Programming",
-        "CI/CD",
-        "Mentorship"
+        "CI/CD"
       ]
     },
     {
       "name": "Backend Software Development",
-      "level": "Expert",
       "keywords": [
         "NodeJS",
-        "Typescript",
         "PostgreSQL",
         "RESTful Services",
         "OpenAPI Specification",
-        "Event-Driven Architecture",
+        "Infrastructure As Code",
         "GCP",
         "AWS"
       ]
     },
     {
-      "name": "Frontend Software Development",
-      "level": "Basic",
-      "keywords": [
-        "React",
-        "HTML",
-        "CSS"
-      ]
+      "name": "Languages",
+      "keywords": ["Typescript", "Javascript", "SQL", "C#"]
     }
   ],
   "interests": [
     {
       "name": "Music",
-      "keywords": [
-        "Choral Singing",
-        "Technical Death Metal",
-        "Pop Punk"
-      ]
+      "keywords": ["Choral Singing", "Technical Death Metal", "Pop Punk"]
     },
     {
       "name": "Comedy",
-      "keywords": [
-        "Stand up",
-        "Improv",
-        "Puns & Dad Jokes"
-      ]
+      "keywords": ["Improvisational Comedy", "Puns & Dad Jokes"]
     },
     {
       "name": "Beverages",
-      "keywords": [
-        "Homebrewer",
-        "Amateur mixologist"
-      ]
+      "keywords": ["Homebrewer", "Amateur mixologist"]
     },
     {
       "name": "Skiing",
-      "keywords": [
-        "Alpine",
-        "Aprés Enthusiast"
-      ]
+      "keywords": ["Alpine", "Aprés Enthusiast"]
     },
     {
       "name": "Games",
       "keywords": [
         "Board games",
         "Video games",
-        "Cribbage",
         "Board Game Convention planner"
       ]
     }
@@ -268,7 +245,8 @@
       ],
       "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2659/2561",
       "summary": "Undergraduate senior project competing in the Amazon Picking Challenge",
-      "endDate": "2015-05-27"
+      "endDate": "2015-05-27",
+      "roles": []
     },
     {
       "name": "DARPA Robotics Challenge",
@@ -282,29 +260,7 @@
       "url": "http://robot.wpi.edu/drc/",
       "endDate": "2014-10-31",
       "summary": "Undergraduate extracurricular project participating in the DARPA Robotics Challenge",
-      "keywords": [
-        "ROS",
-        "PCL",
-        "OpenCV",
-        "AprilTag"
-      ]
-    },
-    {
-      "name": "Software Engineering Course: WPI-Suite",
-      "startDate": "2014-03-31",
-      "highlights": [
-        "Led a team of 15 colleagues to design and implement a project management Java application in a simulated professional Software Engineering environment",
-        "Built application using Ant, deployed to Jenkins server, tested with JUnit, and documented with JavaDoc",
-        "Distributed mock payment to colleagues, scheduled work meetings, delegated tasks, and resolved interpersonal conflicts"
-      ],
-      "keywords": [
-        "Java",
-        "Ant",
-        "Jenkins"
-      ],
-      "description": "Led a team of 15 colleagues to design and implement a project management Java application while utilizing Git version control. Built application using Ant, deployed to Jenkins server, tested with JUnit, and accurately documented with JavaDoc notation. Distributed mock payment to colleagues, scheduled work meetings, delegated tasks, and resolved interpersonal conflicts. Designed and implemented Java software.",
-      "summary": "Undergraduate course simulating a Software Engineering environment",
-      "endDate": "2014-05-31",
+      "keywords": ["ROS", "PCL", "OpenCV", "AprilTag"],
       "roles": []
     }
   ],
