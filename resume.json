@@ -2,11 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Ted Armstrong",
-    "label": "Senior Software Engineer, Passionate Problem Solver, Constant Learner",
+    "label": "Senior Software Engineer | Passionate Problem Solver | Constant Learner",
     "image": "assets/headshot.png",
     "email": "theodorecarmstrong@gmail.com",
     "phone": "+1 (207) 701-9855",
-    "summary": "Software Engineer excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer. Agile development champion with a process and structure mindset. He/Him",
+    "summary": "Software Engineer excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer. Agile development champion with a process and structure mindset.",
     "location": {
       "countryCode": "USA",
       "city": "Portland",
@@ -27,19 +27,45 @@
   },
   "work": [
     {
+      "name": "Dandy",
+      "position": "Senior Software Engineer",
+      "startDate": "2025-02-28",
+      "endDate": "2025-08-08",
+      "summary": "Full service digital dental lab",
+      "url": "https://www.meetdandy.com/",
+      "location": "Remote",
+      "highlights": [
+        "Fullstack Typescript development of a React web application enabling the Manufacturing Execution System (MES) for a full service digital dental lab",
+        "Delivered MES workflows that streamlined technician order flow, reducing fulfillment time and increasing production efficiency",
+        "Backend consisted of a NestJS monolith backed by a PostgreSQL database, running NestJS on Google Cloud Platform (GCP), fronted by a federated GraphQL API",
+        "On Call support for production issues, triaging and resolving issues in a timely manner"
+      ],
+      "keywords": [
+        "Typescript",
+        "Node.js",
+        "NestJS",
+        "React",
+        "GraphQL",
+        "PostgreSQL",
+        "GCP",
+        "MES"
+      ]
+    },
+    {
       "name": "Lightforce Orthodontics",
       "position": "Senior Software Engineer",
       "startDate": "2023-08-28",
+      "endDate": "2025-02-14",
       "highlights": [
         "Developed features and workflows for manufacturing technicians for our Manufacturing Execution System (MES) in our Wilmington Factory",
-        "Migrated legacy express.js RESTful service to the NestJS framework in NodeJS with Typescript, enabling best coding practices and patterns",
+        "Migrated legacy express.js RESTful service to the NestJS framework in Node.js with Typescript, enabling best coding practices and patterns",
         "Designed schemas and wrote performant queries for a PostgreSQL database",
         "Utilized Serverless and Terraform Infrastructure As Code frameworks for deploying software solutions",
         "Participated in the On Call rotation, triaging production issues"
       ],
       "keywords": [
         "Typescript",
-        "NodeJS",
+        "Node.js",
         "NestJS",
         "AWS",
         "Serverless",
@@ -154,71 +180,29 @@
   ],
   "skills": [
     {
-      "name": "General Software Development",
+      "name": "Backend development",
       "keywords": [
-        "Git",
-        "Linting",
-        "Code Review",
-        "Unit Testing",
-        "Pair Programming",
-        "CI/CD"
+        "Node.js", "NestJS", "PostgreSQL", "REST", "GraphQL", "OpenAPI", "CQRS", "Mocha", "Jest"
       ]
     },
     {
-      "name": "Backend Software Development",
+      "name": "Frontend developent",
       "keywords": [
-        "NodeJS",
-        "PostgreSQL",
-        "RESTful Services",
-        "OpenAPI Specification",
-        "Infrastructure As Code",
-        "GCP",
-        "AWS"
+        "React", "Angular", "Storybook", "Material UI"
       ]
+    },
+    {
+      "name": "DevOps & Cloud",
+      "keywords": ["GCP", "AWS", "Terraform", "Serverless", "CI/CD", "Infrastructure as Code"]
     },
     {
       "name": "Languages",
-      "keywords": ["Typescript", "Javascript", "SQL", "C#"]
-    }
-  ],
-  "interests": [
-    {
-      "name": "Music",
-      "keywords": ["Choral Singing", "Technical Death Metal", "Pop Punk"]
-    },
-    {
-      "name": "Comedy",
-      "keywords": ["Improvisational Comedy", "Puns & Dad Jokes"]
-    },
-    {
-      "name": "Beverages",
-      "keywords": ["Homebrewer", "Amateur mixologist"]
-    },
-    {
-      "name": "Skiing",
-      "keywords": ["Alpine", "Aprés Enthusiast"]
-    },
-    {
-      "name": "Games",
-      "keywords": [
-        "Board games",
-        "Video games",
-        "Board Game Convention planner"
-      ]
+      "keywords": ["TypeScript", "JavaScript", "SQL", "C#"]
     }
   ],
   "references": [
     {
-      "name": "Johnny Anguish, managed Ted directly",
-      "reference": "Ted is an exceptional engineer. He has deep technical knowledge, a strong sense of ownership and a dedication to constant growth. I managed Ted at 6 River Systems and relied on his experience to help lead the team. He set the technical standard for the team with his combination of high quality code and domain expertise. He assisted other members of the squad through pair programming, code reviews and knowledge sharing sessions. Ted's impact spread far beyond the team. He took over the running of design review sessions, leading to greater participation from all the teams involved and reclaiming time lost to inefficient processes. He was also a member of on-call rotations that provided indispensable service and required extensive knowledge of the company's systems. Ted went out of his way to build connections in a remote work environment, advocating for best practices around communication and often running squad bonding activities. All of this was driven by his commitment to personal and professional growth. Ted will be an invaluable member of any engineering organization he joins."
-    },
-    {
-      "name": "Tony Gaetani, managed Ted directly",
-      "reference": "I worked with Ted at 6 River Systems for over 5 years and I was his manager for part of that time. I witnessed Ted grow significantly as an engineer, team member, and subject matter expert. Ted delivered high-quality, maintainable, and testable code, demonstrating his expertise and attention to detail. Ted actively fostered a sense of camaraderie, especially in a remote work environment, by organizing engaging team-building activities and checking in on his team members. Ted's thoughtfulness, technical proficiency, and team-oriented nature make him a great candidate for any software organization."
-    },
-    {
-      "name": "Usman Chaudhary, worked on the same team as Ted",
-      "reference": "Ted and I were on same team at Shopify / 6 River Systems, which gave me the opportunity to work closely with him. He is excellent engineer, one of the best I've worked with in my multiple decades in software engineering. He's also a great teacher, and was crucial in helping me learn the software stack when I joined the company. I can't thank him enough for the hours he spent with me, patiently explaining the subtleties of the complex systems we were responsible for. Finally, In addition to his skills as an engineer and a mentor, Ted took the lead in organizing team activities and games, something I appreciated greatly in a remote team."
+      "name": "Available on request"
     }
   ],
   "projects": [

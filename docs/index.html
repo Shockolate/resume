@@ -1,1380 +1,567 @@
 <!doctype html>
 <html>
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>Ted Armstrong</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-  <style>
-  /********************************************
-* 	reset from
-* 	http://meyerweb.com/eric/tools/css/reset/
-*******************************************/
+	<head>
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, user-scalable=no, minimal-ui'>
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
+	<title>Ted Armstrong</title>
 
+	<style>
+	/* Base styles */
 body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/****************
-*	COMMONS
-****************/
-
-body,
-html {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 13px;
-  color: #40484f;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.46153846;
-  text-align: left;
-  -webkit-text-size-adjust: 100%;
-}
-
-p {
-  display: block;
-}
-
-a {
-  color: #0095ff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #0c65a5;
-  text-decoration: underline;
-}
-
-li {
-  list-style-type: square;
-  list-style-position: outside;
-  margin-left: 1.3em;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.67rem;
-}
-
-h3 {
-  font-size: 1.27rem;
+  background: #EEEEEE;
+  font: 12px "Times New Roman", Times, serif;
+  line-height: 1.4;
+  margin: 20px 0;
+  color: #000;
 }
 
 em {
-  color: #757575;
+  color: #333;
+  font-style: italic;
 }
 
-blockquote {
-  margin-bottom: 1em;
+p {
+  line-height: 1.4;
 }
 
-strong {
-  font-weight: 700;
+ul {
+  margin-bottom: 0;
 }
 
-/* main container */
-
-#resume {
-  padding: 1.5rem;
+li {
+  margin-bottom: 1px;
 }
 
-/* every section wrapper */
-
-.section {
-  margin-bottom: 1rem;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-section .location {
-  margin-right: 0.5em;
-  color: #606d76;
-  font-weight: 700;
+a:hover {
+  text-decoration: underline;
+  color: #2077b2;
 }
 
-#contact {
-  margin-top: 0.5rem;
+.normal-weight {
+  font-weight: normal;
 }
 
-#profiles .item {
-  padding: 0;
-}
-
-#header > #profiles,
-#header > #contact,
-#skills,
-#languages,
-#interests {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-#header > div {
-  line-height: 1.5;
-}
-
-#header > div > div {
-  margin-right: 1.2em;
-}
-
-#header h1.name {
-  font-size: 2.8rem;
-  font-weight: 100;
-  line-height: 100%;
-}
-
-#header h2.label {
-  color: #202931;
-  font-size: 1.47rem;
-  font-weight: 300;
-}
-
-#header .image {
-  width: 11em;
-  float: right;
-  border-radius: 4px;
-}
-
-.main-summary {
-  background: #f1f8ff;
-  padding: 1.2em 1em;
-  margin-top: 1rem;
-}
-
-.main-summary p {
-  margin: 0;
-}
-
-.section-title {
-  display: inline-block;
+/* Resume container */
+.resume {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 20px 30px;
   background: #fff;
-  padding: 0 1em 0.3em 0;
-  color: #ff6d1f;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px #aaa;
+  -webkit-box-shadow: 2px 2px 4px #aaa;
+}
+
+/* Section styling */
+.sectionName {
+  text-align: left;
+  font-weight: bold;
   text-transform: uppercase;
-  font-weight: 600;
-  border: none;
-  font-size: 1rem;
+  font-size: 12px;
+  margin-bottom: 2px;
 }
 
-.section > header {
-  position: relative;
-}
-
-.fa {
-  margin-right: 0.25em;
-}
-
-.section > header::after {
-  position: absolute;
-  left: 0;
-  top: 0.7em;
-  height: 1px;
-  background: #ccc;
-  content: "";
+.sectionLine {
+  border-bottom: 1px solid #999;
+  margin-bottom: 8px;
   width: 100%;
-  z-index: -100;
-  display: block;
 }
 
-.section.main-summary > section {
-  margin: 0;
+.sectionContent {
+  width: 100%;
+  margin-top: 2px;
 }
 
-.section > section > header {
-  font-size: 1.38rem;
-  position: relative;
-  margin-top: 0.7em;
+/* Add spacing after each section except the last one */
+.resume > div:not(:last-child) {
+  margin-bottom: 12px;
 }
 
-.section > section > header:first-of-type {
-  margin: 0;
+/* Reduce spacing specifically for skills section */
+.skills {
+  margin-bottom: 10px;
 }
 
-.section > section > header .space-left {
-  position: absolute;
-  left: -1.56rem;
-  top: 5px;
-  color: #aaa;
-  line-height: 1;
-  opacity: 0;
+/* Common block elements */
+.sectionContent > div {
+  page-break-inside: avoid;
+  margin-bottom: 4px;
 }
 
-.position,
-.company,
-.organization,
-.institution,
-.date,
-.area,
-.studyType,
-.event,
-.title,
-.topic,
-.awarder {
-  display: inline;
+/* Common content elements */
+.blockHeader {
+  margin-bottom: 2px;
 }
 
-.position,
-.studyType,
-.area,
-.event,
-.title,
-.language,
-.name {
-  font-weight: 600;
+.title {
+  font-weight: bold;
+  font-size: 12px;
 }
 
-.company::before,
-.institution::before,
-.organization::before,
-.topic::before,
-.awarder::before {
-  content: "at ";
+.date {
+  float: right;
+  font-weight: normal;
 }
 
-.company,
-.institution,
-.organization,
-.topic,
-.awarder {
-  color: #606d76;
-  font-weight: 400;
+.position, .degree {
+  margin-top: 1px;
+  margin-bottom: 2px;
 }
 
-.section header .date {
-  display: block;
-  font-size: 1rem;
-  padding: 0.1em 0;
-  color: #606d76;
-  font-weight: 400;
+.website {
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 500;
 }
 
-.keywords,
-.courses {
-  margin: 0.5em 0;
+.summary {
+  margin-top: 2px;
+  margin-bottom: 4px;
+  line-height: 1.4;
 }
 
-.keywords li,
-.courses li {
+/* Lists */
+.sectionContent ul {
+  padding-left: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  list-style-type: disc;
+}
+
+/* Skill lists - special case for inline display */
+.skillBlock {
+  margin-bottom: 2px;
+}
+
+.skillBlock .title {
+  margin-bottom: 1px;
+}
+
+.skillBlock ul {
+  margin-top: 1px;
+}
+
+.skillBlock ul li {
   display: inline-block;
-  margin: 2px 2px 2px 0;
-  padding: 4px 5px 5px;
-  font-size: 0.9rem;
-  line-height: 1;
-  color: #3e6d8e;
-  background-color: #dfeaf1;
-  border: 0 solid #dfeaf1;
-  white-space: nowrap;
+  margin-right: 10px;
+  margin-bottom: 0;
 }
 
-.keywords li:hover,
-.courses li:hover {
-  background: #dfeaf0;
+/* Separators */
+.separator {
+  height: 1px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
-.highlights {
-  margin: 1em 0 0 0;
+.divider {
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.highlights > li > p {
-  margin-bottom: 0.5em;
+/* Header elements */
+.nameBlock {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 0;
 }
 
-.item {
-  overflow: hidden;
+.name {
+  font-weight: bold;
+}
+
+.label {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.basicsBlock {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 8px;
+}
+
+/* Education elements */
+.coursesBlock {
+  margin-top: 2px;
+}
+
+.coursesList {
+  width: 28%;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 15px;
+}
+
+.course {
+  margin-bottom: 0;
+  line-height: 1.2;
 }
 
 .gpa {
-  clear: both;
-  padding-bottom: 0.5em;
+  margin-bottom: 5px;
+  font-size: 11px;
 }
 
-.fa.social {
-  font-size: 1.1em;
-}
-
-blockquote {
-  margin-block-end: 0.25em;
-}
-
-/* Social Media Brand Colors */
-
-.google-plus {
-  color: #dd4b39;
-}
-
-.tumblr {
-  color: #32506d;
-}
-
-.foursquare {
-  color: #0072b1;
-}
-
-.facebook {
-  color: #3b5998;
-}
-
-.linkedin {
-  color: #007bb6;
-}
-
-.pinterest {
-  color: #cb2027;
-}
-
-.dribbble {
-  color: #ea4c89;
-}
-
-.instagram {
-  color: #517fa4;
-}
-
-.twitter {
-  color: #00aced;
-}
-
-.soundcloud {
-  color: #ff3a00;
-}
-
-.wordpress {
-  color: #21759b;
-}
-
-.youtube {
-  color: #bb0000;
-}
-
-.github {
-  color: #171515;
-}
-
-.stack-overflow {
-  color: #828386;
-  position: relative;
-}
-
-.flickr {
-  color: #ff0084;
-}
-
-.reddit {
-  color: #ff4500;
-}
-
-.hacker-news {
-  color: #ff6600;
-}
-
-.stack-overflow::after {
-  position: absolute;
-  left: 0;
-  content: "\f16c";
-  color: #f68a1f;
-  overflow: hidden;
-  height: 100%;
-}
-
-.telegram {
-  color: #2291c3;
-}
-
-#languages .item,
-#skills .item,
-#interests .item {
-  width: 15em;
-  padding: 0 0.5em 0.5em 0;
-  border-bottom: none;
-}
-
-#skills .item {
-  width: 16em;
-}
-
-#skills .item .keywords {
-  width: 15em;
-}
-
-/* Skill chart */
-
-.level {
-  margin-bottom: 0.5em;
-}
-
-.level em {
-  padding-left: 0.2em;
-}
-
-.level .bar {
-  border: 1px solid #ddd;
-  display: block;
-  width: 10em;
-  height: 5px;
-  position: relative;
-}
-
-.level .bar::after {
-  position: absolute;
-  content: " ";
-  top: 0;
-  left: 0;
-  background: black;
-  height: 5px;
-}
-
-.level.beginner .bar::after,
-.level.basic .bar::after {
-  background: #3b38df;
-  width: 2.5em;
-}
-
-.level.intermediate .bar::after {
-  background: #ffdf1f;
-  width: 5em;
-}
-
-.level.advanced .bar::after,
-.level.fully.proficient .bar::after,
-.level.fluent .bar::after {
-  background: #5cb85c;
-  width: 7.5em;
-}
-
-.level.master .bar::after,
-.level.expert .bar::after,
-.level.bilingual .bar::after,
-.level.native.speaker .bar::after {
-  background: #59c596;
-  width: 10em;
-}
-
-#references .item {
-  padding-left: 0.5em;
-  border-left: 5px solid #ff6d1f;
-  padding-bottom: 1em;
-}
-
-.toggle-item {
-  display: none;
-}
-
-.section > section > section {
-  margin-bottom: 0.5rem;
-}
-
-/******************
-*	HELPER CLASSES
-******************/
-
-.clear::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.display {
-  display: block;
-  opacity: 1 !important;
-}
-
-/****************
-*		TABLET
-****************/
-
-@media screen and (min-width: 602px) {
-  #resume {
-    width: 80%;
+/* Media Queries */
+@media only screen and (max-width: 40em) {
+  body {
+    margin: 0;
+    font-size: 14px;
+  }
+  .resume {
     margin: 0 auto;
+    max-width: 600px;
+    padding: 0.5em 1em;
+    border: none;
   }
-  .section header .date {
-    float: right;
-    font-weight: 600;
-    color: #000;
+  .sectionContent {
+    width: 100%;
   }
-}
-
-/****************
-*		LAPTOP
-****************/
-
-@media screen and (min-width: 1025px) {
-  li {
-    margin-left: 1.5em;
+  .sectionContent .date {
+    padding-right: 2em;
   }
-  #resume {
-    width: 820px;
-    margin: 2rem auto;
+  .sectionName {
+    width: auto;
   }
-  .section > section > header .space-left {
-    opacity: 1;
-    cursor: pointer;
+  .nameBlock {
+    font-size: 20px;
   }
-  .section > section:not(.main-summary) {
-    margin-left: 1.67rem;
-  }
-  .toggle-item {
-    transform: translate(-9999px);
-  }
-  .toggle-item + label {
-    display: block;
-  }
-  .toggle-item:checked + label:after {
-    content: "\f0d7";
-  }
-  .toggle-item + label:after {
-    float: left;
-    cursor: pointer;
-    margin-left: -20px;
-    color: #aaa;
-    font-size: 16px;
-    font-weight: 900;
-    font-family: "Font Awesome 5 Free";
-    content: "\f0da";
-  }
-  .toggle-item ~ .item {
-    height: 0;
-    opacity: 0;
-  }
-  .toggle-item:checked ~ .item {
-    height: auto;
-    opacity: 1;
-    transition: all 0.5s linear;
-  }
-  .company::before,
-  .institution::before,
-  .organization::before,
-  .topic::before,
-  .awarder::before {
-    content: "| ";
-  }
-  .header-left {
-    float: left;
-    width: 70%;
-    word-break: normal;
-  }
-  .section header .date {
-    padding: 0.2em;
-  }
-  .display {
-    display: none;
-  }
-  .display:not(.none) {
-    display: block;
+  .basicsBlock {
+    font-size: 14px;
   }
 }
 
 @media print {
-  /* a:not(.hide-href-print)::after{
-    content: " (" attr(href) ") ";
-  } */
-  #header h1.name {
-    font-size: 2rem;
+  body {
+    background: #FFFFFF;
   }
-  #header h2.label {
-    font-size: 1.25rem;
+  .resume {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 0px 0px;
+    border: 0px;
+    background: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
   }
-  #header .image {
-    width: 8em;
-  }
-  #contact {
-    font-size: 0.85rem;
-  }
-  #profiles {
-    font-size: 0.85rem;
-  }
-  .section header .date {
-    float: right;
-  }
-  .header-left {
-    display: inline-block;
-  }
-  .writing-item {
-    margin: 0 0 0 0 !important;
-  }
-  .section:nth-child(n + 8) {
-    display: none;
-  }
-  #speaking .speaking-item:nth-child(n + 4) {
-    display: none;
-  }
-  #projects .project-item:nth-child(n + 4) {
-    display: none;
-  }
-  #writing .writing-item:nth-child(n + 4) {
-    display: none;
-  }
-  #resume {
-    margin: 0.1em;
-    padding: 0.1em;
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
-    line-height: 1.25;
-  }
-  @page {
-    margin: 1cm 1.4cm;
-  }
-  .item-count {
-    display: none;
-  }
-  .company::before,
-  .institution::before,
-  .organization::before,
-  .topic::before,
-  .awarder::before {
-    content: "at ";
-  }
-  .main-summary {
-    padding: 0;
-    background: #f1f8ff;
-  }
-  .section {
-    margin: 0.8rem 0;
-    padding: 0;
-  }
-  .section header {
-    padding-bottom: 0.15rem;
-  }
-  .section .location {
-    padding-bottom: 0.15rem;
-  }
-  .section > section > section {
-    margin: 0 0 1em 0;
-  }
-  .section > section > section:last-of-type {
-    margin: 0;
-  }
-  .stack-overflow::after {
-    content: "";
-  }
-  .fa.social {
-    color: #828386;
-  }
-  ul {
-    margin-top: 0.4em;
-  }
-  ul,
-  li {
-    padding: 0;
-  }
-  ul.keywords li,
-  ul.courses li {
-    margin: 0;
-    padding: 0;
-    font-size: 0.8rem;
-    background: transparent;
-  }
-  ul.keywords li::after,
-  ul.courses li::after {
-    padding: 0 0 0 0.1rem;
-    content: " |";
-  }
-  ul.keywords::before,
-  ul.courses::before {
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-  #skills .item {
-    width: calc(100% / 3);
-    padding: 0;
-  }
-  .highlights {
-    margin: 0.5em 0 0 0;
-    font-size: 0.95em;
-  }
-  #skills .name {
-    font-size: 0.95em;
-  }
-  #skills .level {
-    font-size: 0.8em;
-  }
-  #interests .name {
-    font-size: 0.95em;
-  }
-  #skills .keywords::before {
-    content: none;
-  }
-  .section p {
-    margin: 0;
-    padding: 0;
-  }
-  ul.courses::before {
-    content: "Major courses: ";
-  }
-  ul.keywords li:last-of-type::after,
-  ul.courses li:last-of-type::after {
-    content: "";
-  }
-  .level em {
-    font-style: normal;
-    padding: 0.1em 0;
-  }
-  .level .bar {
-    display: none;
-  }
-  #profiles .item {
-    padding: 0;
-  }
-  .item.display {
-    display: block;
-    opacity: 1 !important;
-  }
-  .fa-map-marker-alt:before {
-    padding-left: 0.1em;
-  }
-  #interests-section {
-    display: none;
-  }
-  #projects-section {
-    display: none;
+
+  a {
+    color: black;
   }
 }
 
-  </style>
-  
-  </head>
-  <body>
-  
-  <div id="resume">
-    	<header id="header" class="clear">
-    		<div class="middle">
-    			<h1 class="name">Ted Armstrong</h1>
-    			<h2 class="label">Senior Software Engineer, Passionate Problem Solver, Constant Learner</h2>
-    		</div>
-    
-    		<span class="location">
-    			<span class="city">Portland,</span>
-    			<span class="region">Maine</span>
-    			<span class="countryCode">USA</span>
-    		</span>
-    
-    
-    		<div id="contact">
-    			<div class="email">
-    				<span class="far fa-envelope"></span>
-    				<a class="hide-href-print" href="mailto:theodorecarmstrong@gmail.com">theodorecarmstrong@gmail.com</a>
-    			</div>
-    			<div class="phone">
-    				<span class="fas fa-mobile-alt"></span>
-    				<a class="hide-href-print" href="tel:+1 (207) 701-9855">+1 (207) 701-9855</a>
-    			</div>
-    		</div>
-    
-    		<div id="profiles">
-    			<div class="item">
-    				<div class="username">
-    					<span class="fab fa-linkedin linkedin social"></span>
-    					<span class="url">
-    						<a target="_blank" href="https://www.linkedin.com/in/ted-armstrong/">ted-armstrong</a>
-    					</span>
-    				</div>
-    			</div>
-    			<div class="item">
-    				<div class="username">
-    					<span class="fab fa-github github social"></span>
-    					<span class="url">
-    						<a target="_blank" href="https://github.com/Shockolate">Shockolate</a>
-    					</span>
-    				</div>
-    			</div>
-    		</div>
-    	</header>
-    
-    	<section class="section">
-    		<section class="main-summary">
-    			<div><p>Software Engineer excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer. Agile development champion with a process and structure mindset. He/Him</p></div>
-    		</section>
-    	</section>
-    
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Work Experience <span class="item-count">(4)</span></h2>
-      </header>
-    
-      <section id="work">
-        <section class="work-item">
-    
-            <input id="work-item-0" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="work-item-0"></label>
-    
-    			<header class="clear">
-    				<div class="position">Senior Software Engineer</div>
-    				<div class="company">Lightforce Orthodontics</div>
-    				<div class="date">
-    				  <span class="startDate">Aug 2023</span>
-    				  <span class="endDate">- Present</span>
-    				</div>
-    			</header>
-    
-    			<span class="location">
-    				<span class="fas fa-map-marker-alt"></span>
-    				<span>Wilmington, Massachusetts &amp; Remote</span>
-    			</span>
-    
-     
-        	<ul class="keywords">
-          	<li id="working-item">Typescript</li>
-          	<li id="working-item">NodeJS</li>
-          	<li id="working-item">NestJS</li>
-          	<li id="working-item">AWS</li>
-          	<li id="working-item">Serverless</li>
-          	<li id="working-item">PostgreSQL</li>
-          	<li id="working-item">MES</li>
-          	<li id="working-item">Infrastructure As Code</li>
-        	</ul>
-        	<div class="item" id="work-item">
-            <div class="summary"><p>The World's First, and Only, Fully-Personalized 3D Printed Orthodontics Bracket System</p></div>
-            <ul class="highlights">
-                <li><p>Developed features and workflows for manufacturing technicians for our Manufacturing Execution System (MES) in our Wilmington Factory</p></li>
-                <li><p>Migrated legacy express.js RESTful service to the NestJS framework in NodeJS with Typescript, enabling best coding practices and patterns</p></li>
-                <li><p>Designed schemas and wrote performant queries for a PostgreSQL database</p></li>
-                <li><p>Utilized Serverless and Terraform Infrastructure As Code frameworks for deploying software solutions</p></li>
-                <li><p>Participated in the On Call rotation, triaging production issues</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-1" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="work-item-1"></label>
-    
-    			<header class="clear">
-    				<div class="position">Senior Software Engineer</div>
-    				<div class="company">6 River Systems (ex Shopify)</div>
-    				<div class="date">
-    				  <span class="startDate">May 2018</span>
-    				  <span class="endDate">- May 2023</span>
-    				</div>
-    			</header>
-    
-    			<span class="location">
-    				<span class="fas fa-map-marker-alt"></span>
-    				<span>Waltham, Massachusetts &amp; Remote</span>
-    			</span>
-    
-     
-        	<ul class="keywords">
-          	<li id="working-item">Typescript</li>
-          	<li id="working-item">NodeJS</li>
-          	<li id="working-item">OAS</li>
-          	<li id="working-item">PostgreSQL</li>
-          	<li id="working-item">Event Driven Architecture</li>
-          	<li id="working-item">RESTful APIs</li>
-          	<li id="working-item">Robot Behavior</li>
-          	<li id="working-item">GCP</li>
-          	<li id="working-item">Warehouse Fulfillment</li>
-          	<li id="working-item">Loopback4</li>
-        	</ul>
-        	<div class="item" id="work-item">
-            <div class="summary"><p>Warehouse Fulfillment Automation startup with novel AMR solution. Acquired by Shopify October 2019.</p></div>
-            <ul class="highlights">
-                <li><p>Engineered RESTful services written in Typescript on NodeJS hosted by Kubernetes utilizing an Event-Driven architecture (CQRS-ES)</p></li>
-                <li><p>Technical lead of a squad of up to 7 software engineers, 2 product managers, 3 QA engineers, and 1 UX Designer for features in Typescript</p></li>
-                <li><p>Implemented user facing workflows using Behavior Trees which deployed to thousands of Autonomous Mobile Robots (AMRs), stations, and handheld devices in a Warehouse Fulfillment setting</p></li>
-                <li><p>Designed and migrated dozens of normalized data models, with read-performant views and indexes, in PostgreSQL hosted by GCP's Cloud SQL</p></li>
-                <li><p>Advocated for API-First approach for development between internal and external customers, using OpenAPI Specification (OAS) where derived JSON Schemas and Typescript Types are utilized for validation and development</p></li>
-                <li><p>Established a design review process for time-intensive technical projects across the organization</p></li>
-                <li><p>Volunteered for regular on-call shifts (168 continuous hours) providing crucial engineering support for up to 109 active sites</p></li>
-                <li><p>Mentored peers with their technical and career progression</p></li>
-                <li><p>Championed team camaraderie with process improvements, hosted game sessions, and cracked dadjokes</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-2" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="work-item-2"></label>
-    
-    			<header class="clear">
-    				<div class="position">Software Engineer</div>
-    				<div class="company">VistaPrint</div>
-    				<div class="date">
-    				  <span class="startDate">Jul 2015</span>
-    				  <span class="endDate">- Apr 2018</span>
-    				</div>
-    			</header>
-    
-    			<span class="location">
-    				<span class="fas fa-map-marker-alt"></span>
-    				<span>Waltham, Massachusetts</span>
-    			</span>
-    
-     
-        	<ul class="keywords">
-          	<li id="working-item">Serverless</li>
-          	<li id="working-item">AWS</li>
-          	<li id="working-item">C#</li>
-          	<li id="working-item">.NET</li>
-          	<li id="working-item">Javascript</li>
-          	<li id="working-item">NodeJS</li>
-          	<li id="working-item">RESTful APIs</li>
-        	</ul>
-        	<div class="item" id="work-item">
-            <div class="summary"><p>E-commerce company that produces physical and digital marketing products for small businesses.</p></div>
-            <ul class="highlights">
-                <li><p>Developed RESTful microservices in C# (.NET Framework & .NET Core) and Javascript (NodeJS)</p></li>
-                <li><p>Driver of the adoption of Serverless architecture (on AWS) to the Manufacturing Software organization</p></li>
-                <li><p>Designed and implemented CI/CD solution for Serverless architecture</p></li>
-                <li><p>Wrote developer and build tools with Ruby (Rake & RubyGems)</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-3" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="work-item-3"></label>
-    
-    			<header class="clear">
-    				<div class="position">Embedded Software Intern</div>
-    				<div class="company">GE Transportation</div>
-    				<div class="date">
-    				  <span class="startDate">Jun 2014</span>
-    				  <span class="endDate">- Aug 2014</span>
-    				</div>
-    			</header>
-    
-    			<span class="location">
-    				<span class="fas fa-map-marker-alt"></span>
-    				<span>Erie, Pennsylvania</span>
-    			</span>
-    
-     
-        	<ul class="keywords">
-          	<li id="working-item">C++</li>
-          	<li id="working-item">Embedded Software</li>
-        	</ul>
-        	<div class="item" id="work-item">
-            <div class="summary"><p>American railroad rolling stock manufacturer.</p></div>
-            <ul class="highlights">
-                <li><p>Acquired practical experience in C++ Embedded Software development and processes</p></li>
-            </ul>
-        	</div>
-        </section>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
-      </header>
-    
-      <section id="education">
-        <section class="education-item">
-          <header class="clear">
-            <div class="header-left">
-              <div class="studyType">
-                High School Diploma
-              </div>
-              <div class="institution">
-                Maine School of Science and Mathematics (MSSM)
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              2008
-              </span>
-              <span class="endDate">
-              - 2011
-              </span>
-            </div>
-          </header>
-    
-    
-    
-          <div class="item">
-          </div>
-        </section>
-        <section class="education-item">
-            <input id="education-item-1" type="checkbox" class="toggle-item" />
-            <label for="education-item-1"></label>
-          <header class="clear">
-            <div class="header-left">
-              <div class="studyType">
-                B.S.
-              </div>
-              <div class="area">
-                Computer Science
-              </div>
-              <div class="institution">
-                Worcester Polytechnic Institute (WPI)
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              2011
-              </span>
-              <span class="endDate">
-              - 2015
-              </span>
-            </div>
-          </header>
-    
-    
-    
-          <div class="item">
-            <div class='gpa'>
-              <strong> Grade:</strong> <span>3.50 / 4.00 GPA</span>
-            </div>
-              <div class="summary"><p>Graduated with High Distinction</p></div>
-          </div>
-        </section>
-      </section>
-    </section>
-    <section class="section">
-    	<header>
-    		<h2 class='section-title'>Skills</h2>
-    	</header>
-    	<section id="skills">
-    		<div class="item">
-    			<h3 class="name">
-    				General Software Development
-    			</h3>
-    			 			<ul class="keywords">
-    				<li>Git</li>
-    				<li>Linting</li>
-    				<li>Code Review</li>
-    				<li>Unit Testing</li>
-    				<li>Pair Programming</li>
-    				<li>CI/CD</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Backend Software Development
-    			</h3>
-    			 			<ul class="keywords">
-    				<li>NodeJS</li>
-    				<li>PostgreSQL</li>
-    				<li>RESTful Services</li>
-    				<li>OpenAPI Specification</li>
-    				<li>Infrastructure As Code</li>
-    				<li>GCP</li>
-    				<li>AWS</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Languages
-    			</h3>
-    			 			<ul class="keywords">
-    				<li>Typescript</li>
-    				<li>Javascript</li>
-    				<li>SQL</li>
-    				<li>C#</li>
-    			</ul>
-    		</div>
-    	</section>
-    </section>
-      <section class="section" id="references-section">
-        <header>
-          <h2 class="section-title">References</h2>
-        </header>
-        <section id="references">
-            <div class="item">
-                <blockquote class="reference">
-                  &#8220;&#32;Ted is an exceptional engineer. He has deep technical knowledge, a strong sense of ownership and a dedication to constant growth. I managed Ted at 6 River Systems and relied on his experience to help lead the team. He set the technical standard for the team with his combination of high quality code and domain expertise. He assisted other members of the squad through pair programming, code reviews and knowledge sharing sessions. Ted&#x27;s impact spread far beyond the team. He took over the running of design review sessions, leading to greater participation from all the teams involved and reclaiming time lost to inefficient processes. He was also a member of on-call rotations that provided indispensable service and required extensive knowledge of the company&#x27;s systems. Ted went out of his way to build connections in a remote work environment, advocating for best practices around communication and often running squad bonding activities. All of this was driven by his commitment to personal and professional growth. Ted will be an invaluable member of any engineering organization he joins.&#32;&#8221;
-                </blockquote>
-                <div class="name">
-                  Johnny Anguish, managed Ted directly
-                </div>
-            </div>
-            <div class="item">
-                <blockquote class="reference">
-                  &#8220;&#32;I worked with Ted at 6 River Systems for over 5 years and I was his manager for part of that time. I witnessed Ted grow significantly as an engineer, team member, and subject matter expert. Ted delivered high-quality, maintainable, and testable code, demonstrating his expertise and attention to detail. Ted actively fostered a sense of camaraderie, especially in a remote work environment, by organizing engaging team-building activities and checking in on his team members. Ted&#x27;s thoughtfulness, technical proficiency, and team-oriented nature make him a great candidate for any software organization.&#32;&#8221;
-                </blockquote>
-                <div class="name">
-                  Tony Gaetani, managed Ted directly
-                </div>
-            </div>
-            <div class="item">
-                <blockquote class="reference">
-                  &#8220;&#32;Ted and I were on same team at Shopify / 6 River Systems, which gave me the opportunity to work closely with him. He is excellent engineer, one of the best I&#x27;ve worked with in my multiple decades in software engineering. He&#x27;s also a great teacher, and was crucial in helping me learn the software stack when I joined the company. I can&#x27;t thank him enough for the hours he spent with me, patiently explaining the subtleties of the complex systems we were responsible for. Finally, In addition to his skills as an engineer and a mentor, Ted took the lead in organizing team activities and games, something I appreciated greatly in a remote team.&#32;&#8221;
-                </blockquote>
-                <div class="name">
-                  Usman Chaudhary, worked on the same team as Ted
-                </div>
-            </div>
-        </section>
-      </section>
-    <section class="section" id="projects-section">
-      <header>
-        <h2 class='section-title'>Projects <span class="item-count">(2)</span></h2>
-      </header>
-      <section id="projects">
-        <section class="project-item">
-            <input id="project-item-0" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="project-item-0"></label>
-    
-          <header class="clear">
-            <div class="position">Major Qualifying Project: Amazon Picking Challenge</div>
-            <div class="date">
-              <span class="startDate">Jan 2015</span>
-              <span class="endDate">- May 2015</span>
-            </div>
-          </header>
-          <ul class="keywords">
-              <li>Robot Perception</li>
-              <li>Robot Planning</li>
-              <li>Robot Manipulation</li>
-              <li>ROS</li>
-          </ul>
-          <div class="item">
-            <span class="website">
-              <a target="_blank" href="https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2659/2561">Link</a>
-            </span>
-              <div class="summary"><p>Undergraduate senior project competing in the Amazon Picking Challenge</p></div>
-            <ul class="highlights">
-                <li><p>Programmed a 15 D.O.F. Motoman robot to pick from Amazon Robotic Pod shelves in a competition scenario</p></li>
-            </ul>
-          </div>
-        </section>
-        <section class="project-item">
-            <input id="project-item-1" type="checkbox" class="toggle-item" />
-            <label for="project-item-1"></label>
-    
-          <header class="clear">
-            <div class="position">DARPA Robotics Challenge</div>
-            <div class="date">
-              <span class="startDate">Mar 2014</span>
-              <span class="endDate">- Oct 2014</span>
-            </div>
-          </header>
-          <ul class="keywords">
-              <li>ROS</li>
-              <li>PCL</li>
-              <li>OpenCV</li>
-              <li>AprilTag</li>
-          </ul>
-          <div class="item">
-            <span class="website">
-              <a target="_blank" href="http://robot.wpi.edu/drc/">Link</a>
-            </span>
-              <div class="summary"><p>Undergraduate extracurricular project participating in the DARPA Robotics Challenge</p></div>
-            <ul class="highlights">
-                <li><p>Collaborated on a team of 30 of WPI Undergraduate, Graduate students, professors, and several Carnegie Melon University professors to participate in the DARPA Robotics Challenge. Our mission was to add functionality to the Atlas Robot (from Boston Dynamics) to complete a variety tasks in context of a disaster scenario</p></li>
-                <li><p>Worked in the vision sub-team, implementing fiducial recognition software</p></li>
-                <li><p>Incorporated Stereo Cameras and LiDAR for area mapping using PCL, OpenCV and ROS</p></li>
-            </ul>
-          </div>
-        </section>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Publications</h2>
-      </header>
-      <section id="publications">
-        <section class="publication-item">
-            <input id="publication-item-0" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="publication-item-0"></label>
-    
-          <header class="clear">
-            <div class="header-left">
-              <span class="name">
-              <span class="website">
-              <a target="_blank" href="http://www.editlib.org/noaccess/34516/">A CMS Case Study: Faculty and Student Factors in a School Disaster Occurrence</a>
-              </span>
-              </span>
-              <span class="publisher">
-              in Global Learn, May 17, 2010 in Penang, Malaysia
-              </span>
-            </div>
-            <span class="date">
-            17 May 2010
-            </span>
-          </header>
-    
-          <div class="item">  
-              <div class="summary"><p>Abstract: In a secondary school in the Northeast United States, disaster struck when unknowingly windows were blown open and pipes burst in the residential school dormitory. Approximately one week was available before school was to be reopened for the Winter short Term. Cleanup of facilities and student personal property was to take about three weeks. Administration and faculty pooled their thoughts to produce a viable online learning experience for the 130 students spread across the state expecting to return to school. Teachers involved had not at this time been introduced to Course Management Software (CMS). Experiences in providing two weeks worth of quality, online-learning, put together in one week's time are documented through interview and observation.</p></div>
-          </div>
-        </section>
-      </section>
-    </section>
-    <section class="section" id="interests-section">
-      <header>
-        <h2 class='section-title' class='section-title'>Interests</h2>
-      </header>
-      <section id="interests">
-        <div class="item">
-          <h3 class="name">
-            Music
-          </h3>
-          <ul class="keywords">
-            <li>Choral Singing</li>
-            <li>Technical Death Metal</li>
-            <li>Pop Punk</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Comedy
-          </h3>
-          <ul class="keywords">
-            <li>Improvisational Comedy</li>
-            <li>Puns &amp; Dad Jokes</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Beverages
-          </h3>
-          <ul class="keywords">
-            <li>Homebrewer</li>
-            <li>Amateur mixologist</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Skiing
-          </h3>
-          <ul class="keywords">
-            <li>Alpine</li>
-            <li>Aprés Enthusiast</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Games
-          </h3>
-          <ul class="keywords">
-            <li>Board games</li>
-            <li>Video games</li>
-            <li>Board Game Convention planner</li>
-          </ul>
-        </div>
-      </section>
-    </section>
+	</style>
 
-  </body>
+	</head>
+	<body>
+
+	<div class='resume'>
+  <div class='nameBlock'>
+    <span class='name'>Ted Armstrong</span>
+    <div class='label'>Senior Software Engineer | Passionate Problem Solver | Constant Learner</div>
+  </div>
+  <div class='basicsBlock'>
+    <div class='contactBlock'>
+      Portland, Maine 
+      <span class='divider'>•</span><span class='phone'>Phone: +1 (207) 701-9855</span>
+      <span class='divider'>•</span><span class='email'>Email: theodorecarmstrong@gmail.com</span>
+    </div>
+    <div class='profilesBlock'>
+        <span class='url'><a href='https://www.linkedin.com/in/ted-armstrong/'>LinkedIn</a></span><span class='divider'>•</span>
+        <span class='url'><a href='https://github.com/Shockolate'>GitHub</a></span>
+    </div>
+  </div>
+
+  <div class='summaryBlock'>
+    <div class='sectionName'>
+      <span>SUMMARY</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      <span>Software Engineer excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer. Agile development champion with a process and structure mindset.</span>
+    </div>
+  </div>
+
+	<div class='education'>
+    <div class='sectionName'>
+      <span>EDUCATION</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      <div class='educationBlock'>
+        <div class='blockHeader'>
+          <span class='title'>
+            <a href='https://www.mssm.org/'>Maine School of Science and Mathematics (MSSM)</a>
+            <span class='date'>
+              2008-08 &mdash; 2011-05
+            </span>
+          </span>
+          <div class='degree'><em>High School Diploma</em></div>
+        </div>
+      </div>
+      <div class='separator'></div>
+      <div class='educationBlock'>
+        <div class='blockHeader'>
+          <span class='title'>
+            <a href='https://www.wpi.edu/'>Worcester Polytechnic Institute (WPI) <em>(3.50 / 4.00 GPA)</em></a>
+            <span class='date'>
+              2011-08 &mdash; 2015-05
+            </span>
+          </span>
+          <div class='degree'><em>B.S. (Computer Science)</em></div>
+        </div>
+      </div>
+      
+    </div>
+	</div>
+
+  <div class='workBlock'>
+    <div class='sectionName'>
+      <span>EXPERIENCE</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          <a href='https://www.meetdandy.com/'>Senior Software Engineer - <em>Dandy</em>, Remote</a>
+	        </span>
+	        <span class='date'>
+	          2025-02-28 &mdash; 2025-08-08
+	        </span>
+	      </div>
+	      <div class='summary'>Full service digital dental lab</div>
+	      <ul class='highlights'>
+	        <li>Fullstack Typescript development of a React web application enabling the Manufacturing Execution System (MES) for a full service digital dental lab</li>
+	        <li>Delivered MES workflows that streamlined technician order flow, reducing fulfillment time and increasing production efficiency</li>
+	        <li>Backend consisted of a NestJS monolith backed by a PostgreSQL database, running NestJS on Google Cloud Platform (GCP), fronted by a federated GraphQL API</li>
+	        <li>On Call support for production issues, triaging and resolving issues in a timely manner</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          <a href='https://lf.co/'>Senior Software Engineer - <em>Lightforce Orthodontics</em>, Wilmington, Massachusetts &amp; Remote</a>
+	        </span>
+	        <span class='date'>
+	          2023-08-28 &mdash; 2025-02-14
+	        </span>
+	      </div>
+	      <div class='summary'>The World's First, and Only, Fully-Personalized 3D Printed Orthodontics Bracket System</div>
+	      <ul class='highlights'>
+	        <li>Developed features and workflows for manufacturing technicians for our Manufacturing Execution System (MES) in our Wilmington Factory</li>
+	        <li>Migrated legacy express.js RESTful service to the NestJS framework in Node.js with Typescript, enabling best coding practices and patterns</li>
+	        <li>Designed schemas and wrote performant queries for a PostgreSQL database</li>
+	        <li>Utilized Serverless and Terraform Infrastructure As Code frameworks for deploying software solutions</li>
+	        <li>Participated in the On Call rotation, triaging production issues</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          <a href='https://6river.com/'>Senior Software Engineer - <em>6 River Systems (ex Shopify)</em>, Waltham, Massachusetts &amp; Remote</a>
+	        </span>
+	        <span class='date'>
+	          2018-05-07 &mdash; 2023-05-04
+	        </span>
+	      </div>
+	      <div class='summary'>Warehouse Fulfillment Automation startup with novel AMR solution. Acquired by Shopify October 2019.</div>
+	      <ul class='highlights'>
+	        <li>Engineered RESTful services written in Typescript on NodeJS hosted by Kubernetes utilizing an Event-Driven architecture (CQRS-ES)</li>
+	        <li>Technical lead of a squad of up to 7 software engineers, 2 product managers, 3 QA engineers, and 1 UX Designer for features in Typescript</li>
+	        <li>Implemented user facing workflows using Behavior Trees which deployed to thousands of Autonomous Mobile Robots (AMRs), stations, and handheld devices in a Warehouse Fulfillment setting</li>
+	        <li>Designed and migrated dozens of normalized data models, with read-performant views and indexes, in PostgreSQL hosted by GCP&#x27;s Cloud SQL</li>
+	        <li>Advocated for API-First approach for development between internal and external customers, using OpenAPI Specification (OAS) where derived JSON Schemas and Typescript Types are utilized for validation and development</li>
+	        <li>Established a design review process for time-intensive technical projects across the organization</li>
+	        <li>Volunteered for regular on-call shifts (168 continuous hours) providing crucial engineering support for up to 109 active sites</li>
+	        <li>Mentored peers with their technical and career progression</li>
+	        <li>Championed team camaraderie with process improvements, hosted game sessions, and cracked dadjokes</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          <a href='https://www.vistaprint.com/'>Software Engineer - <em>VistaPrint</em>, Waltham, Massachusetts</a>
+	        </span>
+	        <span class='date'>
+	          2015-07-06 &mdash; 2018-04-27
+	        </span>
+	      </div>
+	      <div class='summary'>E-commerce company that produces physical and digital marketing products for small businesses.</div>
+	      <ul class='highlights'>
+	        <li>Developed RESTful microservices in C# (.NET Framework &amp; .NET Core) and Javascript (NodeJS)</li>
+	        <li>Driver of the adoption of Serverless architecture (on AWS) to the Manufacturing Software organization</li>
+	        <li>Designed and implemented CI/CD solution for Serverless architecture</li>
+	        <li>Wrote developer and build tools with Ruby (Rake &amp; RubyGems)</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          <a href='https://www.ge.com/research/sectors/transportation'>Embedded Software Intern - <em>GE Transportation</em>, Erie, Pennsylvania</a>
+	        </span>
+	        <span class='date'>
+	          2014-06-09 &mdash; 2014-08-22
+	        </span>
+	      </div>
+	      <div class='summary'>American railroad rolling stock manufacturer.</div>
+	      <ul class='highlights'>
+	        <li>Acquired practical experience in C++ Embedded Software development and processes</li>
+	      </ul>
+	      
+			</div>
+    </div>
+  </div>
+
+  <div class='projects'>
+    <div class='sectionName'>
+      <span>PROJECTS</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      <div class='projectBlock'>
+        <div class='blockHeader'>
+          <span class='title'>
+            <a href='https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2659/2561'><span class='normal-weight'>Major Qualifying Project: Amazon Picking Challenge <em>(https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2659/2561)</em></span></a>
+          </span>
+          <span class='date'>
+            2015-01-08 &mdash; 2015-05-27
+          </span>
+        </div>
+        <div class='description'>Programmed a 15 DOF Motoman robot to pick from Amazon Robotic Pod shelves</div>
+        <ul class='highlights'>
+          <li>Programmed a 15 D.O.F. Motoman robot to pick from Amazon Robotic Pod shelves in a competition scenario</li>
+        </ul>
+      </div>
+      <div class='separator'></div>
+      <div class='projectBlock'>
+        <div class='blockHeader'>
+          <span class='title'>
+            <a href='http://robot.wpi.edu/drc/'><span class='normal-weight'>DARPA Robotics Challenge <em>(http://robot.wpi.edu/drc/)</em></span></a>
+          </span>
+          <span class='date'>
+            2014-03-31 &mdash; 2014-10-31
+          </span>
+        </div>
+        <div class='description'>Collaborated on a team of 30 of WPI Undergraduate, Graduate students, professors, and several Carnegie Melon University professors to participate in the DARPA Robotics Challenge. Our mission was to add functionality to the Atlas Robot (from Boston Dynamics) to complete a variety tasks in context of a disaster scenario. Worked in the vision sub-team, implementing fiducial recognition software. Incorporated Stereo Cameras and LiDAR for area mapping using PCL, OpenCV and ROS.</div>
+        <ul class='highlights'>
+          <li>Collaborated on a team of 30 of WPI Undergraduate, Graduate students, professors, and several Carnegie Melon University professors to participate in the DARPA Robotics Challenge. Our mission was to add functionality to the Atlas Robot (from Boston Dynamics) to complete a variety tasks in context of a disaster scenario</li>
+          <li>Worked in the vision sub-team, implementing fiducial recognition software</li>
+          <li>Incorporated Stereo Cameras and LiDAR for area mapping using PCL, OpenCV and ROS</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+
+	<div class='skills'>
+    <div class='sectionName'>
+      <span>SKILLS</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      <div class='skillBlock'>
+        <span class='title'>Backend development:</span>
+          <ul class='skillList'>
+            <li>Node.js</li>
+            <li>NestJS</li>
+            <li>PostgreSQL</li>
+            <li>REST</li>
+            <li>GraphQL</li>
+            <li>OpenAPI</li>
+            <li>CQRS</li>
+            <li>Mocha</li>
+            <li>Jest</li>
+          </ul>
+      </div>
+      <div class='skillBlock'>
+        <span class='title'>Frontend developent:</span>
+          <ul class='skillList'>
+            <li>React</li>
+            <li>Angular</li>
+            <li>Storybook</li>
+            <li>Material UI</li>
+          </ul>
+      </div>
+      <div class='skillBlock'>
+        <span class='title'>DevOps &amp; Cloud:</span>
+          <ul class='skillList'>
+            <li>GCP</li>
+            <li>AWS</li>
+            <li>Terraform</li>
+            <li>Serverless</li>
+            <li>CI/CD</li>
+            <li>Infrastructure as Code</li>
+          </ul>
+      </div>
+      <div class='skillBlock'>
+        <span class='title'>Languages:</span>
+          <ul class='skillList'>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>C#</li>
+          </ul>
+      </div>
+    </div>
+	</div>
+
+	<div class='publications'>
+    <div class='sectionName'>
+      <span>PUBLICATIONS</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      <div class='publicationBlock'>
+        <div class='blockHeader'>
+          <span class='title'>
+            <a href='http://www.editlib.org/noaccess/34516/'>A CMS Case Study: Faculty and Student Factors in a School Disaster Occurrence, Global Learn, May 17, 2010 in Penang, Malaysia</a>
+          </span>
+          <span class='date'>
+            <span class='releaseDate'>2010-05-17</span>
+          </span>
+        </div>
+        <div class='summary'>Abstract: In a secondary school in the Northeast United States, disaster struck when unknowingly windows were blown open and pipes burst in the residential school dormitory. Approximately one week was available before school was to be reopened for the Winter short Term. Cleanup of facilities and student personal property was to take about three weeks. Administration and faculty pooled their thoughts to produce a viable online learning experience for the 130 students spread across the state expecting to return to school. Teachers involved had not at this time been introduced to Course Management Software (CMS). Experiences in providing two weeks worth of quality, online-learning, put together in one week's time are documented through interview and observation.</div>
+        
+      </div>
+    </div>
+	</div>
+
+
+
+
+
+
+  <div class='references'>
+    <div class='sectionName'>
+      <span>REFERENCES</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      <div class='referenceBlock'>
+        <div class='blockHeader'>
+          <span class='title'>Available on request</span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+	</body>
 </html>
