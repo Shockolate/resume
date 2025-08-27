@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Ted Armstrong",
-    "label": "Senior Software Engineer | Passionate Problem Solver | Constant Learner",
+    "label": "Senior Software Engineer | Passionate Problem Solver | Perpetual Learner",
     "image": "assets/headshot.png",
     "email": "theodorecarmstrong@gmail.com",
     "phone": "+1 (207) 701-9855",
@@ -90,8 +90,7 @@
         "Advocated for API-First approach for development between internal and external customers, using OpenAPI Specification (OAS) where derived JSON Schemas and Typescript Types are utilized for validation and development",
         "Established a design review process for time-intensive technical projects across the organization",
         "Volunteered for regular on-call shifts (168 continuous hours) providing crucial engineering support for up to 109 active sites",
-        "Mentored peers with their technical and career progression",
-        "Championed team camaraderie with process improvements, hosted game sessions, and cracked dadjokes"
+        "Mentored peers with their technical and career progression"
       ],
       "keywords": [
         "Typescript",
