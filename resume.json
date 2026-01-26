@@ -2,11 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Ted Armstrong",
-    "label": "Senior Software Engineer | Passionate Problem Solver | Perpetual Learner",
-    "image": "assets/headshot.png",
+    "label": "Senior Software Engineer | Full-Stack TypeScript | Startup Veteran",
     "email": "theodorecarmstrong@gmail.com",
     "phone": "+1 (207) 701-9855",
-    "summary": "Software Engineer excited to solve interesting problems with interesting people. Scrappy yet thoughtful approach to delivering value for the customer. Agile development champion with a process and structure mindset.",
+    "summary": "Full-stack engineer who ships. 10+ years building production systems at high-growth startups (6 River/Shopify, Dandy, Lightforce). Strong in TypeScript, Node, React, and cloud infra. Tech lead experience; comfortable owning 0→1 and scaling. Scrappy, outcome-focused.",
     "location": {
       "countryCode": "USA",
       "city": "Portland",
@@ -27,6 +26,26 @@
   },
   "work": [
     {
+      "name": "Insight Global",
+      "position": "Senior Software Engineer",
+      "summary": "Contractor for RVO Health",
+      "startDate": "2025-10-20",
+      "url": "https://www.rvohealth.com/",
+      "location": "Remote",
+      "highlights": [
+        "Shipped RESTful API integrations and data models for Optum Perks, enabling pharmacy home delivery (NestJS, MongoDB, PostgreSQL on Azure)",
+        "Built NestJS microservices and Terraform IaC for repeatable, scalable deploys"
+      ],
+      "keywords": [
+        "Typescript",
+        "Node.js",
+        "NestJS",
+        "Azure",
+        "REST",
+        "Terraform"
+      ]
+    },
+    {
       "name": "Dandy",
       "position": "Senior Software Engineer",
       "startDate": "2025-02-24",
@@ -35,10 +54,8 @@
       "url": "https://www.meetdandy.com/",
       "location": "Remote",
       "highlights": [
-        "Fullstack Typescript development of a React web application enabling the Manufacturing Execution System (MES) for a full service digital dental lab",
-        "Delivered MES workflows that streamlined technician order flow, reducing fulfillment time and increasing production efficiency",
-        "Backend consisted of a NestJS monolith backed by a PostgreSQL database, running NestJS on Google Cloud Platform (GCP), fronted by a federated GraphQL API",
-        "On Call support for production issues, triaging and resolving issues in a timely manner"
+        "Built full-stack MES (React + NestJS, GraphQL, PostgreSQL on GCP) for a digital dental lab; streamlined technician workflows to reduce fulfillment time and boost production efficiency",
+        "Owned on-call for production; triaged and resolved incidents promptly"
       ],
       "keywords": [
         "Typescript",
@@ -57,11 +74,10 @@
       "startDate": "2023-08-28",
       "endDate": "2025-02-14",
       "highlights": [
-        "Developed features and workflows for manufacturing technicians for our Manufacturing Execution System (MES) in our Wilmington Factory",
-        "Migrated legacy express.js RESTful service to the NestJS framework in Node.js with Typescript, enabling best coding practices and patterns",
-        "Designed schemas and wrote performant queries for a PostgreSQL database",
-        "Utilized Serverless and Terraform Infrastructure As Code frameworks for deploying software solutions",
-        "Participated in the On Call rotation, triaging production issues"
+        "Shipped MES features and workflows for manufacturing technicians (Wilmington factory), improving order visibility and throughput",
+        "Led migration of legacy Express.js service to NestJS/TypeScript; reduced tech debt and enabled modern patterns",
+        "Designed PostgreSQL schemas and optimized queries; deployed via Serverless + Terraform IaC on AWS",
+        "On-call rotation; triaged and resolved production issues"
       ],
       "keywords": [
         "Typescript",
@@ -83,14 +99,11 @@
       "startDate": "2018-05-07",
       "endDate": "2023-05-04",
       "highlights": [
-        "Engineered RESTful services written in Typescript on NodeJS hosted by Kubernetes utilizing an Event-Driven architecture (CQRS-ES)",
-        "Technical lead of a squad of up to 7 software engineers, 2 product managers, 3 QA engineers, and 1 UX Designer for features in Typescript",
-        "Implemented user facing workflows using Behavior Trees which deployed to thousands of Autonomous Mobile Robots (AMRs), stations, and handheld devices in a Warehouse Fulfillment setting",
-        "Designed and migrated dozens of normalized data models, with read-performant views and indexes, in PostgreSQL hosted by GCP's Cloud SQL",
-        "Advocated for API-First approach for development between internal and external customers, using OpenAPI Specification (OAS) where derived JSON Schemas and Typescript Types are utilized for validation and development",
-        "Established a design review process for time-intensive technical projects across the organization",
-        "Volunteered for regular on-call shifts (168 continuous hours) providing crucial engineering support for up to 109 active sites",
-        "Mentored peers with their technical and career progression"
+        "Tech lead for squad of 7 engineers, 2 PMs, 3 QA, 1 UX; shipped TypeScript services (Node, Kubernetes, CQRS/event-driven) powering warehouse automation",
+        "Built Behavior Tree workflows deployed to thousands of AMRs, stations, and handhelds across 109+ sites",
+        "Designed and migrated dozens of PostgreSQL data models with performant views/indexes (GCP Cloud SQL)",
+        "Drove API-first development (OpenAPI, generated types); established org-wide design review for large technical projects",
+        "On-call (168hr shifts); mentored engineers on technical and career growth"
       ],
       "keywords": [
         "Typescript",
@@ -114,10 +127,8 @@
       "startDate": "2015-07-06",
       "endDate": "2018-04-27",
       "highlights": [
-        "Developed RESTful microservices in C# (.NET Framework & .NET Core) and Javascript (NodeJS)",
-        "Driver of the adoption of Serverless architecture (on AWS) to the Manufacturing Software organization",
-        "Designed and implemented CI/CD solution for Serverless architecture",
-        "Wrote developer and build tools with Ruby (Rake & RubyGems)"
+        "Drove adoption of serverless (AWS) across Manufacturing Software; designed and implemented CI/CD for serverless deploys",
+        "Built RESTful microservices in C# (.NET) and Node.js; wrote Ruby developer/build tooling (Rake, RubyGems)"
       ],
       "keywords": [
         "Serverless",
@@ -137,9 +148,7 @@
       "position": "Embedded Software Intern",
       "startDate": "2014-06-09",
       "endDate": "2014-08-22",
-      "highlights": [
-        "Acquired practical experience in C++ Embedded Software development and processes"
-      ],
+      "highlights": [],
       "keywords": ["C++", "Embedded Software"],
       "summary": "American railroad rolling stock manufacturer.",
       "url": "https://www.ge.com/research/sectors/transportation",
@@ -167,16 +176,7 @@
     }
   ],
   "awards": [],
-  "publications": [
-    {
-      "name": "A CMS Case Study: Faculty and Student Factors in a School Disaster Occurrence",
-      "publisher": "Global Learn, May 17, 2010 in Penang, Malaysia",
-      "releaseDate": "2010-05-17",
-      "summary": "Abstract: In a secondary school in the Northeast United States, disaster struck when unknowingly windows were blown open and pipes burst in the residential school dormitory. Approximately one week was available before school was to be reopened for the Winter short Term. Cleanup of facilities and student personal property was to take about three weeks. Administration and faculty pooled their thoughts to produce a viable online learning experience for the 130 students spread across the state expecting to return to school. Teachers involved had not at this time been introduced to Course Management Software (CMS). Experiences in providing two weeks worth of quality, online-learning, put together in one week's time are documented through interview and observation.",
-      "url": "http://www.editlib.org/noaccess/34516/",
-      "website": "http://www.editlib.org/noaccess/34516/"
-    }
-  ],
+  "publications": [],
   "skills": [
     {
       "name": "Backend development",
@@ -185,7 +185,7 @@
       ]
     },
     {
-      "name": "Frontend developent",
+      "name": "Frontend development",
       "keywords": [
         "React", "Angular", "Storybook", "Material UI"
       ]
@@ -199,46 +199,7 @@
       "keywords": ["TypeScript", "JavaScript", "SQL", "C#"]
     }
   ],
-  "references": [
-    {
-      "name": "Available on request"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Major Qualifying Project: Amazon Picking Challenge",
-      "startDate": "2015-01-08",
-      "description": "Programmed a 15 DOF Motoman robot to pick from Amazon Robotic Pod shelves",
-      "highlights": [
-        "Programmed a 15 D.O.F. Motoman robot to pick from Amazon Robotic Pod shelves in a competition scenario"
-      ],
-      "keywords": [
-        "Robot Perception",
-        "Robot Planning",
-        "Robot Manipulation",
-        "ROS"
-      ],
-      "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2659/2561",
-      "summary": "Undergraduate senior project competing in the Amazon Picking Challenge",
-      "endDate": "2015-05-27",
-      "roles": []
-    },
-    {
-      "name": "DARPA Robotics Challenge",
-      "startDate": "2014-03-31",
-      "description": "Collaborated on a team of 30 of WPI Undergraduate, Graduate students, professors, and several Carnegie Melon University professors to participate in the DARPA Robotics Challenge. Our mission was to add functionality to the Atlas Robot (from Boston Dynamics) to complete a variety tasks in context of a disaster scenario. Worked in the vision sub-team, implementing fiducial recognition software. Incorporated Stereo Cameras and LiDAR for area mapping using PCL, OpenCV and ROS.",
-      "highlights": [
-        "Collaborated on a team of 30 of WPI Undergraduate, Graduate students, professors, and several Carnegie Melon University professors to participate in the DARPA Robotics Challenge. Our mission was to add functionality to the Atlas Robot (from Boston Dynamics) to complete a variety tasks in context of a disaster scenario",
-        "Worked in the vision sub-team, implementing fiducial recognition software",
-        "Incorporated Stereo Cameras and LiDAR for area mapping using PCL, OpenCV and ROS"
-      ],
-      "url": "http://robot.wpi.edu/drc/",
-      "endDate": "2014-10-31",
-      "summary": "Undergraduate extracurricular project participating in the DARPA Robotics Challenge",
-      "keywords": ["ROS", "PCL", "OpenCV", "AprilTag"],
-      "roles": []
-    }
-  ],
+  "projects": [],
   "meta": {
     "version": "v1.0.0",
     "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
