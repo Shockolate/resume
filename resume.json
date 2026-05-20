@@ -33,11 +33,13 @@
       "url": "https://www.rvohealth.com/",
       "location": "Remote",
       "highlights": [
-        "Shipped RESTful API integrations and data models for Optum Perks, enabling pharmacy home delivery (NestJS, MongoDB, PostgreSQL on Azure)",
-        "Built NestJS microservices and Terraform IaC for repeatable, scalable deploys"
+        "Delivered NestJS REST integrations and data models for Optum Perks, enabling pharmacy home delivery and online care (MongoDB, PostgreSQL, Azure)",
+        "Built NestJS microservices and Terraform IaC for repeatable Azure deploys across environments",
+        "Drove features from requirements through production on a multi-team health platform; coordinated with service owners on API contracts and rollout",
+        "Accelerated development velocity and delivered smarter solutions by orchestrating multi-agent workflows, transforming complex requirements into actionable plans using Claude Code"
       ],
       "keywords": [
-        "Typescript",
+        "TypeScript",
         "Node.js",
         "NestJS",
         "Azure",
@@ -54,11 +56,13 @@
       "url": "https://www.meetdandy.com/",
       "location": "Remote",
       "highlights": [
-        "Built full-stack MES (React + NestJS, GraphQL, PostgreSQL on GCP) for a digital dental lab; streamlined technician workflows to reduce fulfillment time and boost production efficiency",
-        "Owned on-call for production; triaged and resolved incidents promptly"
+        "Built full-stack MES (React, NestJS, GraphQL, PostgreSQL on GCP) for a digital dental lab; improved technician workflows to speed fulfillment and lab throughput",
+        "Owned production on-call; restored outages quickly and drove durable fixes for recurring issues",
+        "Shipped production MES features from design through deploy on a fast-moving startup team (GCP, GraphQL)",
+        "Adopted AI-assisted development using Cursor IDE to accelerate tasks and improve code quality"
       ],
       "keywords": [
-        "Typescript",
+        "TypeScript",
         "Node.js",
         "NestJS",
         "React",
@@ -80,7 +84,7 @@
         "On-call rotation; triaged and resolved production issues"
       ],
       "keywords": [
-        "Typescript",
+        "TypeScript",
         "Node.js",
         "NestJS",
         "AWS",
@@ -106,8 +110,8 @@
         "On-call (168hr shifts); mentored engineers on technical and career growth"
       ],
       "keywords": [
-        "Typescript",
-        "NodeJS",
+        "TypeScript",
+        "Node.js",
         "OAS",
         "PostgreSQL",
         "Event Driven Architecture",
@@ -136,7 +140,7 @@
         "C#",
         ".NET",
         "Javascript",
-        "NodeJS",
+        "Node.js",
         "RESTful APIs"
       ],
       "summary": "E-commerce company that produces physical and digital marketing products for small businesses.",
