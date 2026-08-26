@@ -1,8 +1,7 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Ted Armstrong",
-    "label": "Senior Software Engineer | Full-Stack TypeScript | Startup Veteran",
+    "label": "Software Engineer | Full-Stack TypeScript | Startup Veteran",
     "email": "theodorecarmstrong@gmail.com",
     "phone": "+1 (207) 701-9855",
     "summary": "Full-stack engineer who ships. 10+ years building production systems at high-growth startups (6 River/Shopify, Dandy, Lightforce). Strong in TypeScript, Node, React, and cloud infra. Tech lead experience; comfortable owning 0→1 and scaling. Scrappy, outcome-focused.",
@@ -26,10 +25,19 @@
   },
   "work": [
     {
+      "name": "Second Nature",
+      "position": "Staff Software Engineer",
+      "summary": "Resident experience platform for property management companies, powering onboarding and resident benefits across rental properties.",
+      "startDate": "2026-07-21",
+      "url": "https://www.secondnature.com/",
+      "location": "Remote"
+    },
+    {
       "name": "Insight Global",
       "position": "Senior Software Engineer",
       "summary": "Contractor for RVO Health",
       "startDate": "2025-10-20",
+      "endDate": "2026-07-16",
       "url": "https://www.rvohealth.com/",
       "location": "Remote",
       "highlights": [

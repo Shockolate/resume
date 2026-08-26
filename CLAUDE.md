@@ -20,3 +20,7 @@ npm run build-and-view  # validate → build → open in browser
 - The theme (`jsonresume-theme-tech`) controls all HTML/CSS output. To change layout or styling, the theme package itself would need to be forked/replaced — there are no local template files.
 - GitHub Pages serves `docs/index.html` directly from the `main` branch. Committing a rebuilt `docs/index.html` is how you publish changes.
 - PDF export is browser print-to-PDF from the hosted page; the theme is already print-optimized for two pages.
+
+## Editing
+
+Whenever an edit is made to resume.json, run `npm test`
