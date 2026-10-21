@@ -211,7 +211,20 @@
       "keywords": ["TypeScript", "JavaScript", "SQL", "C#"]
     }
   ],
-  "projects": [],
+  "projects": [
+    {
+      "name": "Hanker",
+      "description": "Wishlist app live at hanker.dev: full-stack TypeScript monorepo (Next.js, NestJS, Drizzle, Neon Postgres) deployed on Vercel via GitHub Actions.",
+      "url": "https://hanker.dev",
+      "startDate": "2026-10-07",
+      "highlights": [
+        "Built a GitHub Actions CD pipeline that separates secret-free builds from deploy-only jobs, runs backward-compatible migrations before deploy, and smoke-tests production on every merge; policy and mutation tests guard the split",
+        "Operate it as a production service: Better Stack uptime and deep health checks, scrubbed Sentry reporting, per-PR Neon database previews, and runbooks mapping each alert to a first step",
+        "Nightly encrypted Postgres backups with a read-only role and retention locks, proven by a restore drill; documented point-in-time restore and ordered rollback",
+        "Single-origin architecture (Next.js rewrite to a NestJS API) for first-party cookies and no CORS; a Zod contracts package is the only shared code"
+      ]
+    }
+  ],
   "meta": {
     "version": "v1.0.0",
     "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"

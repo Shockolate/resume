@@ -449,6 +449,32 @@ a:hover {
     </div>
   </div>
 
+  <div class='projects'>
+    <div class='sectionName'>
+      <span>PROJECTS</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      <div class='projectBlock'>
+        <div class='blockHeader'>
+          <span class='title'>
+            <a href='https://hanker.dev'><span class='normal-weight'>Hanker <em>(https://hanker.dev)</em></span></a>
+          </span>
+          <span class='date'>
+            2026-10-07 &mdash; Present
+          </span>
+        </div>
+        <div class='description'>Wishlist app live at hanker.dev: full-stack TypeScript monorepo (Next.js, NestJS, Drizzle, Neon Postgres) deployed on Vercel via GitHub Actions.</div>
+        <ul class='highlights'>
+          <li>Built a GitHub Actions CD pipeline that separates secret-free builds from deploy-only jobs, runs backward-compatible migrations before deploy, and smoke-tests production on every merge; policy and mutation tests guard the split</li>
+          <li>Operate it as a production service: Better Stack uptime and deep health checks, scrubbed Sentry reporting, per-PR Neon database previews, and runbooks mapping each alert to a first step</li>
+          <li>Nightly encrypted Postgres backups with a read-only role and retention locks, proven by a restore drill; documented point-in-time restore and ordered rollback</li>
+          <li>Single-origin architecture (Next.js rewrite to a NestJS API) for first-party cookies and no CORS; a Zod contracts package is the only shared code</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
 
 	<div class='skills'>
     <div class='sectionName'>
