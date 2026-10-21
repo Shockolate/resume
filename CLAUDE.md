@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A [JSON Resume](https://jsonresume.org/) project. The source of truth is `resume.json`, which follows the JSON Resume schema. `certificates.json` holds supplemental data not in the main schema. The rendered output is `docs/index.html`, served via GitHub Pages at shockolate.github.io/resume/.
+A [JSON Resume](https://jsonresume.org/) project. The source of truth is `resume.json`, which follows the JSON Resume schema. `certificates.json` holds supplemental data not in the main schema. It is standalone: neither validation nor the build reads it, so editing it doesn't change `docs/index.html`. The rendered output is `docs/index.html`, served via GitHub Pages at shockolate.github.io/resume/.
 
 ## Commands
 
@@ -23,4 +23,7 @@ npm run build-and-view  # validate → build → open in browser
 
 ## Editing
 
-Whenever an edit is made to resume.json, run `npm test`
+Whenever an edit is made to resume.json, run `npm test`, then `npm run build`.
+Commit `resume.json` and the regenerated `docs/index.html` together; Pages
+serves the committed HTML, so a stale `docs/index.html` means the live site
+doesn't change.
