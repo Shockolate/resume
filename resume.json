@@ -4,7 +4,7 @@
     "label": "Software Engineer | Full-Stack TypeScript | Startup Veteran",
     "email": "theodorecarmstrong@gmail.com",
     "phone": "+1 (207) 701-9855",
-    "summary": "Full-stack engineer who ships. 10+ years building production systems at high-growth startups (6 River/Shopify, Dandy, Lightforce). Strong in TypeScript, Node, React, and cloud infra. Tech lead experience; comfortable owning 0→1 and scaling. Scrappy, outcome-focused.",
+    "summary": "Full-stack engineer who ships. 10+ years building production systems at high-growth startups (6 River Systems/Shopify, Dandy, Lightforce). Strong in TypeScript, Node, React, and cloud infra. Tech lead experience; comfortable owning 0→1 and scaling. Scrappy, outcome-focused.",
     "location": {
       "countryCode": "USA",
       "city": "Portland",
@@ -30,7 +30,19 @@
       "summary": "Resident experience platform for property management companies, powering onboarding and resident benefits across rental properties.",
       "startDate": "2026-07-21",
       "url": "https://www.secondnature.com/",
-      "location": "Remote"
+      "location": "Remote",
+      "highlights": [
+        "Led architecture and delivery of Benefits Manager, a new property-manager product for tracking resident-benefits fulfillment (NestJS, Next.js, PostgreSQL, AWS).",
+        "Built an AI-assisted delivery workflow with Claude Code: specs and decision records up front, parallel agents shipping small stacked PRs, verified via multi-agent review, CI, and production query-plan checks."
+      ],
+      "keywords": [
+        "TypeScript",
+        "NestJS",
+        "Next.js",
+        "PostgreSQL",
+        "Claude Code",
+        "AWS"
+      ]
     },
     {
       "name": "Insight Global",
@@ -199,7 +211,7 @@
     {
       "name": "Frontend development",
       "keywords": [
-        "React", "Angular", "Storybook", "Material UI"
+        "React", "Next.js", "Storybook", "Material UI"
       ]
     },
     {
@@ -209,6 +221,10 @@
     {
       "name": "Languages",
       "keywords": ["TypeScript", "JavaScript", "SQL", "C#"]
+    },
+    {
+      "name": "AI Tools",
+      "keywords": ["Claude Code"]
     }
   ],
   "projects": [
